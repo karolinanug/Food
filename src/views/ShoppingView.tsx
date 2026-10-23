@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { StorePrices } from "../components/StorePrices";
+import { PriceSourcesNote } from "./PricesView";
 import { useApp } from "../context";
 import { CATEGORIES, STORE_COLOR, STORE_NAME } from "../data/stores";
 import { baseName, eur, fullName, qty } from "../lib/format";
@@ -87,6 +88,7 @@ export function ShoppingView({ weekKey, weekTitle }: { weekKey: string; weekTitl
 
   return (
     <>
+      <PriceSourcesNote />
       <h3 className="section-title">Kur pirkti pigiausia?</h3>
       <div className="basket-cards">
         <button className={mode === "mixed" ? "card basket on" : "card basket"} onClick={() => setState((s) => ({ ...s, listMode: "mixed" }))}>
@@ -151,7 +153,9 @@ export function ShoppingView({ weekKey, weekTitle }: { weekKey: string; weekTitl
                   {others.length > 0 && (
                     <details className="compare">
                       <summary>Palyginti</summary>
-                      <StorePrices items={[...(c && store ? [{ store, value: c.cost }] : []), ...others]} />
+                      <StorePrices
+                        items={[...(c && store ? [{ store, value: c.cost, sub: l.product.offers[store]?.title, url: l.product.offers[store]?.url }] : []), ...others.map((o) => ({ ...o, sub: l.product.offers[o.store]?.title, url: l.product.offers[o.store]?.url }))]}
+                      />
                     </details>
                   )}
                 </li>

@@ -71,10 +71,35 @@ export function parseLidl(html: string): Candidate[] {
   return out;
 }
 
+/** Maxima savaitės pasiūlymai (maxima.lt/pasiulymai). Kainos parduotuvėse; dalis – tik su AČIŪ kortele. */
+export function parseMaxima(html: string): Candidate[] {
+  const out: Candidate[] = [];
+  const parts = html.split(/<h4 class="[^"]*text-truncate[^"]*">/).slice(1);
+  for (const part of parts) {
+    const title = decodeEntities(part.slice(0, part.indexOf("</h4>"))).replace(/\*/g, "").replace(/\s+/g, " ").trim();
+    const tag = part.slice(0, 4000);
+    const int = tag.match(/offer-price-tag__price-integer">\s*(\d+)\s*</)?.[1];
+    const frac = tag.match(/offer-price-tag__price-fraction">\s*(\d+)\s*</)?.[1];
+    if (!title || !int) continue;
+    const price = Number(`${int}.${frac ?? "00"}`);
+    const was = tag.match(/offer-price-tag__old-price">\s*([\d.,]+)/)?.[1];
+    out.push({ title, price, ...(was && num(was) > price ? { was: num(was) } : {}), url: "https://www.maxima.lt/pasiulymai" });
+  }
+  return out;
+}
+
+let maximaCache: Promise<Candidate[]> | null = null;
+
 export const ADAPTERS: (StoreAdapter & { partial?: boolean })[] = [
   {
     id: "rimi",
     search: async (q) => parseRimi(await fetchText(`https://www.rimi.lt/e-parduotuve/lt/paieska?query=${encodeURIComponent(q)}`)),
+  },
+  {
+    id: "barbora",
+    // Barbora blokuoja automatines užklausas, todėl imame Maxima parduotuvių savaitės pasiūlymus.
+    partial: true,
+    search: async () => (maximaCache ??= fetchText("https://www.maxima.lt/pasiulymai").then(parseMaxima)),
   },
   {
     id: "lidl",

@@ -14,6 +14,9 @@ export interface Offer {
   size: number;
   /** Įprasta kaina, jei šiuo metu taikoma akcija. */
   was?: number;
+  /** Tikros prekės pavadinimas ir nuoroda parduotuvėje (kai kaina surinkta iš parduotuvės). */
+  title?: string;
+  url?: string;
 }
 
 export interface Product {

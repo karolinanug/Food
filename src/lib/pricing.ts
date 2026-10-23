@@ -1,4 +1,4 @@
-import type { Product, Recipe, StoreId, WeekPlan } from "../types";
+import type { Offer, Product, Recipe, StoreId, WeekPlan } from "../types";
 
 /** Kaina už 1 kg / 1 l / 1 vnt. */
 export function unitPrice(product: Product, store: StoreId): number | null {
@@ -7,11 +7,8 @@ export function unitPrice(product: Product, store: StoreId): number | null {
   return product.unit === "vnt" ? offer.price / offer.size : (offer.price / offer.size) * 1000;
 }
 
-export interface RankedOffer {
+export interface RankedOffer extends Offer {
   store: StoreId;
-  price: number;
-  size: number;
-  was?: number;
   unitPrice: number;
 }
 

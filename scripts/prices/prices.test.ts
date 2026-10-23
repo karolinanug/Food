@@ -51,3 +51,14 @@ describe("prekės parinkimas", () => {
     expect(pickOffer(c, PRODUCT_BY_ID.svogunai, 1000, RULES.svogunai)).toMatchObject({ price: 0.99, size: 1000 });
   });
 });
+
+describe("Maxima pasiūlymai", async () => {
+  const { parseMaxima } = await import("./adapters");
+  const html = `<h4 class="mt-4 text-truncate text-truncate--2"> Mandarinai*, 1 kg </h4> <div class="offer-footer"> <div class="offer-price-tag__price offer-price-tag__price--one-digit"> <span class="offer-price-tag__price-integer">1</span> <div class="offer-price-tag__price-meta"> <span class="offer-price-tag__price-fraction">79</span> <span class="offer-price-tag__price-currency">€</span> </div> </div> <span class="offer-price-tag__old-price"> 2,49 € </span>
+  <h4 class="mt-4 text-truncate text-truncate--2"> Visiems šampūnams -30% </h4> <div class="offer-price-tag--percentage">-30%</div>`;
+  it("ištraukia kainą ir seną kainą, praleidžia procentines akcijas", () => {
+    const items = parseMaxima(html);
+    expect(items).toHaveLength(1);
+    expect(items[0]).toMatchObject({ title: "Mandarinai, 1 kg", price: 1.79, was: 2.49 });
+  });
+});

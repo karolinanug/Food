@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { StorePrices } from "../components/StorePrices";
 import { useApp } from "../context";
-import { PRICES_UPDATED, PRODUCTS } from "../data/products";
-import { CATEGORIES } from "../data/stores";
+import { CATEGORIES, STORE_NAME } from "../data/stores";
 import { eur, fullName, unitLabel } from "../lib/format";
 import { rankOffers } from "../lib/pricing";
 import type { CategoryId } from "../types";
@@ -10,14 +9,14 @@ import type { CategoryId } from "../types";
 type Sort = "cheap" | "saving" | "name";
 
 export function PricesView() {
-  const { state } = useApp();
+  const { state, productList } = useApp();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<CategoryId | "">("");
   const [sort, setSort] = useState<Sort>("cheap");
   const [onlyPromo, setOnlyPromo] = useState(false);
 
   const q = query.trim().toLowerCase();
-  const rows = PRODUCTS.filter((p) => (!category || p.category === category) && (!q || fullName(p).toLowerCase().includes(q)))
+  const rows = productList.filter((p) => (!category || p.category === category) && (!q || fullName(p).toLowerCase().includes(q)))
     .map((p) => {
       const offers = rankOffers(p, state.stores);
       const spread = offers.length > 1 ? offers[offers.length - 1].price - offers[0].price : 0;
@@ -30,7 +29,7 @@ export function PricesView() {
 
   return (
     <>
-      <p className="notice">Kainos dabar yra pavyzdinės ({PRICES_UPDATED}). Tikrus duomenis prijungsime vėliau.</p>
+      <PriceSourcesNote />
       <div className="toolbar">
         <input className="search" placeholder="Ieškoti produkto…" value={query} onChange={(e) => setQuery(e.target.value)} />
         <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} aria-label="Rikiavimas">
@@ -61,7 +60,8 @@ export function PricesView() {
                 store: o.store,
                 value: o.price,
                 was: o.was,
-                sub: `${eur(o.unitPrice)}/${unitLabel(p.unit)}`,
+                sub: `${eur(o.unitPrice)}/${unitLabel(p.unit)}${o.title ? ` · ${o.title}` : ""}`,
+                url: o.url,
               }))}
               missing={state.stores.filter((s) => !p.offers[s])}
             />
@@ -70,5 +70,22 @@ export function PricesView() {
         {rows.length === 0 && <p className="muted">Produktų nerasta.</p>}
       </div>
     </>
+  );
+}
+
+/** Iš kur šiuo metu imamos kiekvienos parduotuvės kainos. */
+export function PriceSourcesNote() {
+  const { state, priceSources, prices } = useApp();
+  const by = (src: string) => state.stores.filter((s) => priceSources[s] === src).map((s) => STORE_NAME[s]);
+  const live = by("live");
+  const partial = by("partial");
+  const demo = by("demo");
+  const updated = prices?.generated ? new Date(prices.generated).toLocaleDateString("lt-LT") : null;
+  return (
+    <div className={demo.length === state.stores.length ? "notice" : "notice info"}>
+      {live.length > 0 && <div>✓ Tikros kainos: <strong>{live.join(", ")}</strong>{updated && ` (atnaujinta ${updated})`}</div>}
+      {partial.length > 0 && <div>✓ Tik savaitės akcijos: <strong>{partial.join(", ")}</strong></div>}
+      {demo.length > 0 && <div>Pavyzdinės kainos: {demo.join(", ")}</div>}
+    </div>
   );
 }

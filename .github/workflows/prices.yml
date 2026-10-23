@@ -1,0 +1,32 @@
+name: Kainų atnaujinimas
+on:
+  schedule:
+    - cron: "23 3 * * *" # kasdien ~6:23 Lietuvos laiku
+  workflow_dispatch:
+  push:
+    branches: ["claude/**"]
+    paths: ["scripts/prices/**", ".github/workflows/prices.yml"]
+permissions:
+  contents: write
+concurrency: prices
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/prices/update.ts
+      - name: Išsaugoti kainas
+        run: |
+          git config user.name "kainu-robotas"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/prices.json
+          if git diff --cached --quiet; then echo "Kainos nepasikeitė"; exit 0; fi
+          git commit -m "Kainos atnaujintos $(date -u +%F)"
+          git pull --rebase
+          git push

@@ -292,3 +292,7 @@ h3 { font-size: 15px; }
 .ob-plan-row { display: flex; gap: 10px; padding: 4px 0; }
 .ob-plan-row .muted { width: 76px; flex: 0 0 auto; }
 .modal-body > .btn.block { margin: 4px 0 8px; }
+.notice.info { background: var(--accent-soft); color: var(--text); }
+.notice div + div { margin-top: 2px; }
+.demo-tag { margin-left: 6px; font-size: 10px; padding: 0 5px; border-radius: 4px; background: var(--line); color: var(--muted); vertical-align: 1px; }
+.price .store a { color: inherit; }

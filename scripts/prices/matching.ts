@@ -22,7 +22,7 @@ export const RULES: Record<string, MatchRule> = {
   bulves: veg("bulvės", "bulv", ["batat", "krakmol", "fri", "kroket", "skilt", "lazdel"]),
   svogunai: veg("svogūnai", "svogun", ["laisk", "ziedai", "kepti", "pavasar"]),
   morkos: veg("morkos", "morkos", ["korej", "tarkuot"]),
-  cesnakai: veg("česnakai", "cesnak", ["milt", "granul", "malt", "dzio", "pasta", "aliej", "laisk"]),
+  cesnakai: veg("česnakai", "cesnak", ["baton", "sviest", "milt", "granul", "malt", "dzio", "pasta", "aliej", "laisk"]),
   burokeliai: veg("burokėliai", "burokel", ["virt", "tarkuot", "lap"]),
   marinuoti_burokeliai: rule("tarkuoti burokėliai", ["burokel", ["marinuot", "tarkuot"]], ["sriub", "salot"]),
   kopustas: veg("baltagūžiai kopūstai", "kopust", ["juros", "raugint", "pekin", "zied", "brokol", "raudon", "briuse", "zieminis", "kaliaropes"]),
@@ -33,8 +33,8 @@ export const RULES: Record<string, MatchRule> = {
   petrazoles: veg("petražolės", "petrazol", ["dziov", "sakn"]),
   pievagrybiai: veg("pievagrybiai", "pievagryb", ["sald", "pjaust", "kepti"]),
   obuoliai: veg("obuoliai", "obuol", ["dzio", "trapuc", "pyrag", "sultys", "acto"]),
-  citrina: veg("citrinos", "citrin", ["sult", "rugst", "pipir", "zole", "arbat", "vanden"]),
-  paprikos: veg("paprikos", "paprik", ["riesut", "malt", "rukyt", "dziov", "kepint", "trapuc", "lazdel"]),
+  citrina: veg("citrinos", "citrin", ["zaliosios", "sult", "rugst", "pipir", "zole", "arbat", "vanden"]),
+  paprikos: veg("paprikos", "paprik", ["silk", "file", "riesut", "malt", "rukyt", "dziov", "kepint", "trapuc", "lazdel"]),
   cukinijos: veg("cukinijos", "cukinij"),
   brokoliai: veg("brokoliai", "brokol", ["sald"]),
   spinatai: veg("špinatai", "spinat", ["sald"]),
@@ -55,11 +55,11 @@ export const RULES: Record<string, MatchRule> = {
   menke: rule("menkės filė", ["menk", "file"], ["rukyt", "kepta", "dzio", "lazdel"]),
   kumpis: rule("virtas kumpis", ["kumpis"], ["rukyt", "vytint", "sald"]),
   desreles: rule("pieniškos dešrelės", ["desrel", "pienis"]),
-  lasisa: rule("lašišos filė", ["lasis", "file"], ["padaz", "aliej", "rukyt", "sudyt", "konserv", "pastet", "dzio"]),
+  lasisa: rule("lašišos filė", ["lasis", "file"], ["sud", "padaz", "aliej", "rukyt", "sudyt", "konserv", "pastet", "dzio"]),
   silke: rule("silkės filė aliejuje", ["silk", "file"], ["rukyt", "patal", "salot", "pomidor", "garstyc"]),
 
   // Pieno produktai ir kiaušiniai
-  grietine: rule("grietinė 30%", ["grietin"], ["padaz", "kremas", "ledai", "sur"]),
+  grietine: rule("grietinė 30%", ["grietin"], ["mis", "augalin", "padaz", "kremas", "ledai", "sur"]),
   kefyras: rule("kefyras", ["kefyr"], ["vaisi", "brašk", "vysni", "kokteil"]),
   pienas: rule("pienas 2,5%", ["pienas"], ["kondens", "sausas", "kokos", "aviz", "migdol", "soj", "ryz", "sokolad", "kakav", "kokteil", "rugst", "vaik", "kudik", "be laktozes"]),
   varske: rule("varškė", ["varske"], ["grudet", "surel", "desert", "kremas", "pyrag", "glaistyt", "spurgos", "kepta", "apkep"]),
@@ -72,7 +72,7 @@ export const RULES: Record<string, MatchRule> = {
 
   // Duona
   juoda_duona: rule("ruginė duona", ["duona", "rugin"], ["traskuc", "dziuves", "skrebut", "kvietin"]),
-  dziuvesiai: rule("džiūvėsėliai", ["dziuves"], ["arbatin", "sald", "vanil", "prieskon", "pagard"]),
+  dziuvesiai: rule("džiūvėsėliai", ["dziuves"], ["razin", "arbatin", "sald", "vanil", "prieskon", "pagard"]),
   batonas: rule("batonas", ["batonas"], ["sokolad", "pilno grudo", "sald"]),
   tortilijos: rule("tortilijos", [["tortilij", "tortil", "paplotel"]], ["traskuc", "kukuruz", "sur"]),
 
@@ -110,6 +110,9 @@ export const RULES: Record<string, MatchRule> = {
   raudonelis: rule("džiovintas raudonėlis", ["raudonel"], ["mis", "arbat", "aliej", "pica"]),
 };
 
+/** Visada atmetama: gyvūnų ir kūdikių maistas, paruošti patiekalai. */
+const GLOBAL_NOT = ["pasar", "sunim", "suniu", "katem", "kaciu", "gyvun", "kudik", "tyrel", "men.)", "sefai", "paruost", "su padazu"];
+
 /** Mažosios raidės, be diakritikų, vienas tarpas. */
 export function normalize(s: string): string {
   return s
@@ -122,5 +125,8 @@ export function normalize(s: string): string {
 
 export function titleMatches(title: string, r: MatchRule): boolean {
   const t = normalize(title);
-  return r.must.every((group) => group.some((w) => t.includes(normalize(w)))) && !(r.not ?? []).some((w) => t.includes(normalize(w)));
+  return (
+    r.must.every((group) => group.some((w) => t.includes(normalize(w)))) &&
+    ![...(r.not ?? []), ...GLOBAL_NOT].some((w) => t.includes(normalize(w)))
+  );
 }

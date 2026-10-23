@@ -81,7 +81,7 @@ export function pickOffer(candidates: Candidate[], product: Product, typicalAmou
     const size = c.byWeight ? (product.unit === "vnt" ? 1 : 1000) : packSize(c, product);
     if (!size) continue;
     // Neprotingai didelės ar mažos pakuotės (pvz. 10 kg bulvių maišas) atmetamos.
-    if (!c.byWeight && (size > typicalAmount * 6 || size < typicalAmount / 20)) continue;
+    if (!c.byWeight && (size > typicalAmount * 6 || size < typicalAmount / 8)) continue;
     const cost = loose ? (c.price / size) * typicalAmount : Math.ceil(typicalAmount / size - 1e-9) * c.price;
     if (!best || cost < best.cost) {
       best = {

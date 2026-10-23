@@ -78,3 +78,13 @@ describe("sveriamos prekės", () => {
     expect(titleMatches("Smulkūs makaronai sriubai, 400 g", RULES.smulkus_makaronai)).toBe(true);
   });
 });
+
+describe("bendros išimtys", () => {
+  it("atmeta gyvūnų, kūdikių maistą ir paruoštus patiekalus", () => {
+    expect(titleMatches("Visavertis pašaras suaugusiems šunims su vištiena, cukinija, 400 g", RULES.cukinijos)).toBe(false);
+    expect(titleMatches("Brokolių tyrelė su ryžiais HIPP (nuo 8 mėn.), 220 g", RULES.brokoliai)).toBe(false);
+    expect(titleMatches("Sriuba katėms su vištienos krūtinėle ZOOROYAL, 40 g", RULES.vist_krutinele)).toBe(false);
+    expect(titleMatches("Virti makaronai su padažu ir mocarela sūriu IKI ŠEFAI, 275 g", RULES.mocarela)).toBe(false);
+    expect(titleMatches("Cukinijos, 1 kg", RULES.cukinijos)).toBe(true);
+  });
+});

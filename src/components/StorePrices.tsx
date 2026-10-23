@@ -32,7 +32,7 @@ export function StorePrices({ items, missing = [] }: { items: PriceChip[]; missi
             <span className="amount">
               {it.was !== undefined && <s>{eur(it.was)}</s>} {eur(it.value)}
             </span>
-            {i > 0 && best !== undefined && <span className="diff">+{eur(it.value - best)}</span>}
+            {i > 0 && best !== undefined && it.value - best >= 0.005 && <span className="diff">+{eur(it.value - best)}</span>}
             {i === 0 && sorted.length > 1 && <span className="badge">pigiausia</span>}
           </span>
         </li>

@@ -144,7 +144,11 @@ export function ShoppingView({ weekKey, weekTitle }: { weekKey: string; weekTitl
                     <span className="shop-text">
                       <span className="name">{baseName(l.product)} <span className="muted">· {qty(l.amount, l.product.unit, true)}</span></span>
                       <span className="muted small">
-                        {c && store && (l.product.loose ? "sveriama" : `${Math.round(c.packs)} × ${fullName(l.product)}`)}
+                        {c && store && (() => {
+                          const offer = l.product.offers[store];
+                          const name = offer?.title ?? fullName(l.product);
+                          return l.product.loose || offer?.loose ? `sveriama · ${name}` : `${Math.round(c.packs)} × ${name}`;
+                        })()}
                         {" · "}{l.recipes.join(", ")}
                       </span>
                     </span>

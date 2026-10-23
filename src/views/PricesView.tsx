@@ -1,0 +1,74 @@
+import { useState } from "react";
+import { StorePrices } from "../components/StorePrices";
+import { useApp } from "../context";
+import { PRICES_UPDATED, PRODUCTS } from "../data/products";
+import { CATEGORIES } from "../data/stores";
+import { eur, fullName, unitLabel } from "../lib/format";
+import { rankOffers } from "../lib/pricing";
+import type { CategoryId } from "../types";
+
+type Sort = "cheap" | "saving" | "name";
+
+export function PricesView() {
+  const { state } = useApp();
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState<CategoryId | "">("");
+  const [sort, setSort] = useState<Sort>("cheap");
+  const [onlyPromo, setOnlyPromo] = useState(false);
+
+  const q = query.trim().toLowerCase();
+  const rows = PRODUCTS.filter((p) => (!category || p.category === category) && (!q || fullName(p).toLowerCase().includes(q)))
+    .map((p) => {
+      const offers = rankOffers(p, state.stores);
+      const spread = offers.length > 1 ? offers[offers.length - 1].price - offers[0].price : 0;
+      return { p, offers, spread, promo: offers.some((o) => o.was !== undefined) };
+    })
+    .filter((r) => r.offers.length > 0 && (!onlyPromo || r.promo))
+    .sort((a, b) =>
+      sort === "cheap" ? a.offers[0].price - b.offers[0].price : sort === "saving" ? b.spread - a.spread : a.p.name.localeCompare(b.p.name, "lt")
+    );
+
+  return (
+    <>
+      <p className="notice">Kainos dabar yra pavyzdinės ({PRICES_UPDATED}). Tikrus duomenis prijungsime vėliau.</p>
+      <div className="toolbar">
+        <input className="search" placeholder="Ieškoti produkto…" value={query} onChange={(e) => setQuery(e.target.value)} />
+        <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} aria-label="Rikiavimas">
+          <option value="cheap">Pigiausi</option>
+          <option value="saving">Didžiausias kainų skirtumas</option>
+          <option value="name">Pagal pavadinimą</option>
+        </select>
+      </div>
+      <div className="chips">
+        <button className={category === "" ? "chip on" : "chip"} onClick={() => setCategory("")}>Visi</button>
+        {CATEGORIES.map((c) => (
+          <button key={c.id} className={category === c.id ? "chip on" : "chip"} onClick={() => setCategory(c.id)}>{c.name}</button>
+        ))}
+        <label className="check">
+          <input type="checkbox" checked={onlyPromo} onChange={(e) => setOnlyPromo(e.target.checked)} /> Tik akcijos
+        </label>
+      </div>
+
+      <div className="product-list">
+        {rows.map(({ p, offers, spread }) => (
+          <article key={p.id} className="card product">
+            <header>
+              <span className="name">{fullName(p)}</span>
+              {spread > 0.005 && <span className="muted small">sutaupote iki {eur(spread)}</span>}
+            </header>
+            <StorePrices
+              items={offers.map((o) => ({
+                store: o.store,
+                value: o.price,
+                was: o.was,
+                sub: `${eur(o.unitPrice)}/${unitLabel(p.unit)}`,
+              }))}
+              missing={state.stores.filter((s) => !p.offers[s])}
+            />
+          </article>
+        ))}
+        {rows.length === 0 && <p className="muted">Produktų nerasta.</p>}
+      </div>
+    </>
+  );
+}

@@ -55,11 +55,11 @@ export const RULES: Record<string, MatchRule> = {
   menke: rule("menkės filė", ["menk", "file"], ["rukyt", "kepta", "dzio", "lazdel"]),
   kumpis: rule("virtas kumpis", ["kumpis"], ["rukyt", "vytint", "sald"]),
   desreles: rule("pieniškos dešrelės", ["desrel", "pienis"]),
-  lasisa: rule("lašišos filė", ["lasis", "file"], ["sud", "padaz", "aliej", "rukyt", "sudyt", "konserv", "pastet", "dzio"]),
+  lasisa: rule("lašišos filė", ["lasis", "file"], ["s. r.", "s.r.", "sud", "padaz", "aliej", "rukyt", "sudyt", "konserv", "pastet", "dzio"]),
   silke: rule("silkės filė aliejuje", ["silk", "file"], ["rukyt", "patal", "salot", "pomidor", "garstyc"]),
 
   // Pieno produktai ir kiaušiniai
-  grietine: rule("grietinė 30%", ["grietin"], ["mis", "augalin", "padaz", "kremas", "ledai", "sur"]),
+  grietine: rule("grietinė 30%", ["grietin"], ["misin", "augalin", "padaz", "kremas", "ledai", "sur"]),
   kefyras: rule("kefyras", ["kefyr"], ["vaisi", "brašk", "vysni", "kokteil"]),
   pienas: rule("pienas 2,5%", ["pienas"], ["kondens", "sausas", "kokos", "aviz", "migdol", "soj", "ryz", "sokolad", "kakav", "kokteil", "rugst", "vaik", "kudik", "be laktozes"]),
   varske: rule("varškė", ["varske"], ["grudet", "surel", "desert", "kremas", "pyrag", "glaistyt", "spurgos", "kepta", "apkep"]),
@@ -125,8 +125,13 @@ export function normalize(s: string): string {
 
 export function titleMatches(title: string, r: MatchRule): boolean {
   const t = normalize(title);
-  return (
-    r.must.every((group) => group.some((w) => t.includes(normalize(w)))) &&
-    ![...(r.not ?? []), ...GLOBAL_NOT].some((w) => t.includes(normalize(w)))
-  );
+  if (!r.must.every((group) => group.some((w) => t.includes(normalize(w))))) return false;
+  if ([...(r.not ?? []), ...GLOBAL_NOT].some((w) => t.includes(normalize(w)))) return false;
+  // „Varškės užtepėlė su česnakais“: produktas po „su“ yra tik priedas, ne pati prekė.
+  const su = t.indexOf(" su ");
+  if (su >= 0) {
+    const first = Math.min(...r.must[0].map((w) => t.indexOf(normalize(w))).filter((i) => i >= 0));
+    if (first > su) return false;
+  }
+  return true;
 }

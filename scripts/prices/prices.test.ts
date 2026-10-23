@@ -88,3 +88,12 @@ describe("bendros išimtys", () => {
     expect(titleMatches("Cukinijos, 1 kg", RULES.cukinijos)).toBe(true);
   });
 });
+
+describe("„su“ priedai", () => {
+  it("produktas po „su“ nelaikomas pačia preke", () => {
+    expect(titleMatches("Varškės užtepėlė su česnakais VILKYŠKIŲ, 150 g", RULES.cesnakai)).toBe(false);
+    expect(titleMatches("Koldūnai su rikota, mocarela, špinatais, 400 g", RULES.mocarela)).toBe(false);
+    expect(titleMatches("Grietinė su žolelėmis, 400 g", RULES.grietine)).toBe(true);
+    expect(titleMatches("Š. r. atlant. lašišų filė RIMI SMART, 100 g", RULES.lasisa)).toBe(false);
+  });
+});

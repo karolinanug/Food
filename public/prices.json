@@ -1,26 +1,26 @@
 {
- "generated": "2026-10-23T10:15:12.747Z",
+ "generated": "2026-10-23T10:26:23.341Z",
  "stores": {
   "rimi": {
-   "updated": "2026-10-23T10:15:12.747Z",
+   "updated": "2026-10-23T10:26:23.341Z",
    "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-10-23T10:15:12.747Z",
+   "updated": "2026-10-23T10:26:23.341Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-10-23T10:15:12.747Z",
+   "updated": "2026-10-23T10:26:23.341Z",
    "found": 4,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-10-23T10:15:12.747Z",
-   "found": 71,
+   "updated": "2026-10-23T10:26:23.341Z",
+   "found": 67,
    "total": 79
   }
  },
@@ -122,10 +122,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/saltai-rukyti-mesos-gaminiai/s-ruk-kiaul-sonines-kubeliai-morliny-200g/p/999202"
    },
    "lasisa": {
-    "price": 10.38,
-    "size": 1000,
-    "title": "Naminio sūd. antlantinės lašišos filė, 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/rimi-konditerija-ir-kulinarija/paruostas-maistas-kulinarija/uzkandziai/naminio-sud-antlantines-lasisos-file-1-kg/p/2001151"
+    "price": 2.99,
+    "size": 100,
+    "title": "Š. r. atlant. lašišų filė RIMI SMART, 100 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/apdorota-zuvis/s-r-atlant-lasisu-file-rimi-smart-100-g/p/817345"
    },
    "silke": {
     "price": 1.29,
@@ -183,10 +183,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/sviesi-duona/duona-su-raugu-ir-rugin-miltais-morta-500-g/p/4004508"
    },
    "dziuvesiai": {
-    "price": 1.95,
-    "size": 200,
-    "title": "Džiūvėsėliai su razinomis RIMI, 200g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/duoniukai-riestainiai-dziuvesiai/dziuveseliai-su-razinomis-rimi-200g/p/809401"
+    "price": 1.99,
+    "size": 350,
+    "title": "Auksaspalviai džiūvėsėliai CITY TASTE, 350 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/auksaspalviai-dziuveseliai-city-taste-350-g/p/1014224"
    },
    "grikiai": {
     "price": 1.69,
@@ -273,11 +273,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 2.39,
-    "size": 300,
-    "title": "BOCMANO silkių filė su paprikomis ZIGMAS,300g",
-    "was": 3.29,
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/bocmano-silkiu-file-su-paprikomis-zigmas-300g/p/919038"
+    "price": 1.89,
+    "size": 200,
+    "title": "Mažosios paprikos RIMI, 1 kl., 200 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/mazosios-paprikos-rimi-1-kl-200-g/p/296792"
    },
    "cukinijos": {
     "price": 1.99,
@@ -561,10 +560,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Plautos%20morkos%20CLEVER"
    },
    "cesnakai": {
-    "price": 0.79,
-    "size": 160,
-    "title": "Prancūziškas batonas su česnakinio sviesto įdaru MANTINGA, 160 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pranc%C5%ABzi%C5%A1kas%20batonas%20su%20%C4%8Desnakinio%20sviesto%20%C4%AFdaru%20MANTINGA%2C%20160%20g"
+    "price": 1.59,
+    "size": 150,
+    "title": "Varškės užtepėlė su česnakais VILKYŠKIŲ, 18,5 % rieb., 150 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Var%C5%A1k%C4%97s%20u%C5%BEtep%C4%97l%C4%97%20su%20%C4%8Desnakais%20VILKY%C5%A0KI%C5%B2%2C%2018%2C5%20%25%20rieb.%2C%20150%20g"
    },
    "burokeliai": {
     "price": 0.49,
@@ -607,12 +606,6 @@
     "size": 1000,
     "title": "Sveriami obuoliai RAUDONIEJI",
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sveriami%20obuoliai%20RAUDONIEJI"
-   },
-   "citrina": {
-    "price": 1.49,
-    "size": 3,
-    "title": "Žaliosios citrinos, 3 vnt.",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C5%BDaliosios%20citrinos%2C%203%20vnt."
    },
    "kiaulienos_farsas": {
     "price": 2.49,
@@ -663,10 +656,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Silpnai%20s%C5%ABdyta%20silki%C5%B3%20fil%C4%97%20su%20aliejumi%20CLEVER%2C%20220%20g"
    },
    "grietine": {
-    "price": 0.95,
+    "price": 1.51,
     "size": 400,
-    "title": "Grietinės ir augalinių riebalų mišinys CLEVER, 30% rieb., 400 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Grietin%C4%97s%20ir%20augalini%C5%B3%20riebal%C5%B3%20mi%C5%A1inys%20CLEVER%2C%2030%25%20rieb.%2C%20400%20g"
+    "title": "Grietinė CLEVER, 30% rieb., 400 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Grietin%C4%97%20CLEVER%2C%2030%25%20rieb.%2C%20400%20g"
    },
    "kefyras": {
     "price": 1.89,
@@ -771,10 +764,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Cukrus%20CLEVER%2C%201%20kg"
    },
    "medus": {
-    "price": 0.19,
-    "size": 25,
-    "title": "Medus KORIO, 25 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Medus%20KORIO%2C%2025%20g"
+    "price": 3.49,
+    "size": 500,
+    "title": "Žiedų medus CLEVER, 500 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C5%BDied%C5%B3%20medus%20CLEVER%2C%20500%20g"
    },
    "druska": {
     "price": 0.49,
@@ -813,18 +806,6 @@
     "was": 2.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C5%BDaliosios%20paprikos%20"
    },
-   "cukinijos": {
-    "price": 2.79,
-    "size": 400,
-    "title": "Visavertis pašaras suaugusiems šunims su vištiena, cukinija, morkomis ir dygminų aliejumi ZOOROYAL, 400 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Visavertis%20pa%C5%A1aras%20suaugusiems%20%C5%A1unims%20su%20vi%C5%A1tiena%2C%20cukinija%2C%20morkomis%20ir%20dygmin%C5%B3%20aliejumi%20ZOOROYAL%2C%20400%20g"
-   },
-   "brokoliai": {
-    "price": 2.79,
-    "size": 220,
-    "title": "Brokolių tyrelė su ryžiais ir triušiena HIPP (nuo 8 mėn.), 220 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Brokoli%C5%B3%20tyrel%C4%97%20su%20ry%C5%BEiais%20ir%20triu%C5%A1iena%20HIPP%20(nuo%208%20m%C4%97n.)%2C%20220%20g"
-   },
    "spinatai": {
     "price": 0.99,
     "size": 100,
@@ -844,12 +825,6 @@
     "title": "Imbieras",
     "was": 3.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Imbieras"
-   },
-   "vist_krutinele": {
-    "price": 0.99,
-    "size": 40,
-    "title": "Sriuba katėms su vištienos krūtinėle ir morkomis ZOOROYAL, 40 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sriuba%20kat%C4%97ms%20su%20vi%C5%A1tienos%20kr%C5%ABtin%C4%97le%20ir%20morkomis%20ZOOROYAL%2C%2040%20g"
    },
    "kalakutienos_farsas": {
     "price": 3.49,
@@ -882,10 +857,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Nat%C5%ABralus%20jogurtas%20CLEVER%203%2C6%25%20rieb.%2C%20250%20g"
    },
    "mocarela": {
-    "price": 4.49,
-    "size": 275,
-    "title": "Virti makaronai su padažu ir mocarela sūriu IKI ŠEFAI, 275 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Virti%20makaronai%20su%20pada%C5%BEu%20ir%20mocarela%20s%C5%ABriu%20IKI%20%C5%A0EFAI%2C%20275%20g"
+    "price": 5.79,
+    "size": 400,
+    "title": "Koldūnai su rikota, mocarela, špinatais VIČI TRADITIONAL, 400 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Kold%C5%ABnai%20su%20rikota%2C%20mocarela%2C%20%C5%A1pinatais%20VI%C4%8CI%20TRADITIONAL%2C%20400%20g"
    },
    "aviziu_gerimas": {
     "price": 2.29,

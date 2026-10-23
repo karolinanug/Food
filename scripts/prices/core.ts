@@ -107,7 +107,10 @@ export const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 export const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36";
 
 export async function fetchText(url: string): Promise<string> {
-  const res = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "lt-LT,lt;q=0.9", Accept: "text/html,application/json" } });
+  const res = await fetch(url, {
+    headers: { "User-Agent": UA, "Accept-Language": "lt-LT,lt;q=0.9", Accept: "text/html,application/json" },
+    signal: AbortSignal.timeout(25000),
+  });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }

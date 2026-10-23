@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useApp } from "../context";
 import { MEALS } from "../data/stores";
 import { eur } from "../lib/format";
+import { recipeAllowed } from "../lib/diet";
 import { costPerServing } from "../lib/pricing";
 import type { MealId, Recipe } from "../types";
 import { Modal } from "./Modal";
@@ -14,6 +15,7 @@ export function PickerDialog({ title, meal, onPick, onClose }: { title: string; 
   const q = query.trim().toLowerCase();
   const list = recipes
     .filter((r) => (!onlyMeal || r.meals.includes(meal)) && (!q || r.name.toLowerCase().includes(q)))
+    .filter((r) => !state.profile || recipeAllowed(r, products, state.profile))
     .map((r) => ({ r, cost: costPerServing(r, products, state.stores) }))
     .sort((a, b) => (a.cost ?? Infinity) - (b.cost ?? Infinity));
 

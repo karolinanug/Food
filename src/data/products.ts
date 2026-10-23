@@ -1,4 +1,4 @@
-import type { CategoryId, Offer, Product, StoreId, Unit } from "../types";
+import type { Allergen, CategoryId, Offer, Product, ProductKind, StoreId, Unit } from "../types";
 
 // Pavadinimas rašomas „Produktas|pakuotė“, pvz. „Pienas|2,5 %, 1 l“.
 // DEMONSTRACINĖS kainos (EUR), sugalvotos tik appso kūrimui. Tikri duomenys turės ateiti
@@ -24,7 +24,7 @@ function p(
   return { id, name: base, ...(pack ? { pack } : {}), category, unit, offers: normalized, ...extra };
 }
 
-export const PRODUCTS: Product[] = [
+const RAW: Product[] = [
   // Daržovės ir vaisiai
   p("bulves", "Bulvės|2 kg", "dar", "g", 2000, { barbora: 1.99, rimi: 1.89, iki: 1.95, lidl: 1.69 }),
   p("svogunai", "Svogūnai|1 kg", "dar", "g", 1000, { barbora: 1.19, rimi: 1.09, iki: 1.15, lidl: 0.99 }),
@@ -86,6 +86,61 @@ export const PRODUCTS: Product[] = [
   p("lauro", "Lauro lapai|10 g", "pri", "g", 10, { barbora: 0.59, rimi: 0.55, iki: 0.59 }, { pantry: true }),
   p("cinamonas", "Maltas cinamonas|50 g", "pri", "g", 50, { barbora: 1.29, rimi: 1.19, iki: 1.25, lidl: 0.89 }, { pantry: true }),
   p("aliejus", "Saulėgrąžų aliejus|1 l", "pri", "ml", 1000, { barbora: 2.49, rimi: 2.39, iki: 2.45, lidl: 2.19 }, { pantry: true }),
+  // Papildomi produktai įvairesnėms mitybos rūšims
+  p("paprikos", "Paprikos|500 g", "dar", "g", 500, { barbora: 2.49, rimi: 2.29, iki: 2.39, lidl: 1.99 }),
+  p("cukinijos", "Cukinijos", "dar", "g", 1000, { barbora: 2.29, rimi: 1.99, iki: 2.19, lidl: 1.89 }, { loose: true }),
+  p("brokoliai", "Brokoliai|500 g", "dar", "g", 500, { barbora: 1.99, rimi: 1.89, iki: { price: 1.49, was: 1.79 }, lidl: 1.59 }),
+  p("spinatai", "Špinatai|200 g", "dar", "g", 200, { barbora: 1.79, rimi: 1.69, iki: 1.75, lidl: 1.49 }),
+  p("bananai", "Bananai", "dar", "g", 1000, { barbora: 1.39, rimi: 1.29, iki: 1.35, lidl: 1.19 }, { loose: true }),
+  p("imbieras", "Imbieras", "dar", "g", 1000, { barbora: 5.99, rimi: 5.49, iki: 5.79, lidl: 4.99 }, { loose: true }),
+  p("vist_krutinele", "Vištienos krūtinėlės filė|500 g", "mes", "g", 500, { barbora: 4.29, rimi: 3.99, iki: 4.19, lidl: { price: 3.49, was: 4.09 } }),
+  p("kalakutienos_farsas", "Kalakutienos faršas|500 g", "mes", "g", 500, { barbora: 4.49, rimi: 4.29, iki: 4.39, lidl: 3.99 }),
+  p("menke", "Menkės filė|400 g", "mes", "g", 400, { barbora: 5.49, rimi: 5.29, iki: 5.39, lidl: 4.79 }),
+  p("kumpis", "Virtas kumpis|150 g", "mes", "g", 150, { barbora: 1.99, rimi: 1.89, iki: 1.95, lidl: 1.59 }),
+  p("desreles", "Pieniškos dešrelės|400 g", "mes", "g", 400, { barbora: 2.79, rimi: 2.69, iki: 2.75, lidl: 2.29 }),
+  p("jogurtas", "Natūralus jogurtas|400 g", "pie", "g", 400, { barbora: 1.29, rimi: 1.19, iki: 1.25, lidl: 0.99 }),
+  p("mocarela", "Mocarela|125 g", "pie", "g", 125, { barbora: 1.39, rimi: 1.29, iki: 1.35, lidl: 0.99 }),
+  p("aviziu_gerimas", "Avižų gėrimas|1 l", "pie", "ml", 1000, { barbora: 2.19, rimi: 1.99, iki: 2.09, lidl: 1.69 }),
+  p("batonas", "Batonas|500 g", "duo", "g", 500, { barbora: 1.19, rimi: 1.09, iki: 1.15, lidl: 0.89 }),
+  p("tortilijos", "Kvietinės tortilijos|6 vnt.", "duo", "vnt", 6, { barbora: 1.99, rimi: 1.89, iki: 1.95, lidl: 1.49 }),
+  p("lesiai", "Raudonieji lęšiai|500 g", "bak", "g", 500, { barbora: 1.99, rimi: 1.89, iki: 1.95, lidl: 1.69 }),
+  p("avinzirniai", "Konservuoti avinžirniai|400 g", "bak", "g", 400, { barbora: 0.99, rimi: 0.95, iki: 0.99, lidl: 0.79 }),
+  p("pupeles", "Konservuotos raudonosios pupelės|400 g", "bak", "g", 400, { barbora: 0.89, rimi: 0.85, iki: 0.89, lidl: 0.69 }),
+  p("tofu", "Tofu|200 g", "bak", "g", 200, { barbora: 2.29, rimi: 2.19, iki: 2.25, lidl: 1.89 }),
+  p("kokosu_pienas", "Kokosų pienas|400 ml", "bak", "ml", 400, { barbora: 1.99, rimi: 1.89, iki: 1.95, lidl: 1.49 }),
+  p("kuskusas", "Kuskusas|500 g", "bak", "g", 500, { barbora: 1.79, rimi: 1.69, iki: 1.75, lidl: 1.49 }),
+  p("pom_pasta", "Pomidorų pasta|200 g", "bak", "g", 200, { barbora: 1.19, rimi: 1.09, iki: 1.15, lidl: 0.89 }),
+  p("makaronai_bg", "Makaronai be glitimo|400 g", "bak", "g", 400, { barbora: 2.49, rimi: 2.39, iki: 2.45, lidl: 1.99 }),
+  p("sojos_padazas", "Sojų padažas|150 ml", "bak", "ml", 150, { barbora: 1.69, rimi: 1.59, iki: 1.65, lidl: 1.29 }),
+  p("alyvuogiu_aliejus", "Alyvuogių aliejus|500 ml", "bak", "ml", 500, { barbora: 5.99, rimi: 5.49, iki: 5.79, lidl: 4.49 }),
+  p("kario", "Kario prieskoniai|50 g", "pri", "g", 50, { barbora: 1.29, rimi: 1.19, iki: 1.25, lidl: 0.89 }, { pantry: true }),
+  p("paprika_malta", "Malta paprika|50 g", "pri", "g", 50, { barbora: 1.19, rimi: 1.09, iki: 1.15, lidl: 0.79 }, { pantry: true }),
+  p("raudonelis", "Džiovintas raudonėlis|10 g", "pri", "g", 10, { barbora: 0.99, rimi: 0.95, iki: 0.99, lidl: 0.69 }, { pantry: true }),
 ];
+
+const KIND: Record<string, ProductKind> = {
+  kiaulienos_farsas: "mesa", mal_mesa: "mesa", jautienos_farsas: "mesa", sonine: "mesa", vist_file: "mesa",
+  vist_blauzdeles: "mesa", sonkauliai: "mesa", karbonadas: "mesa", vist_krutinele: "mesa",
+  kalakutienos_farsas: "mesa", kumpis: "mesa", desreles: "mesa",
+  lasisa: "zuvis", silke: "zuvis", menke: "zuvis",
+  grietine: "gyvulinis", kefyras: "gyvulinis", pienas: "gyvulinis", varske: "gyvulinis", kiausiniai: "gyvulinis",
+  sviestas: "gyvulinis", suris: "gyvulinis", jogurtas: "gyvulinis", mocarela: "gyvulinis", medus: "gyvulinis",
+};
+
+const ALLERGENS: Record<string, Allergen[]> = {
+  grietine: ["laktoze"], kefyras: ["laktoze"], pienas: ["laktoze"], varske: ["laktoze"], sviestas: ["laktoze"],
+  suris: ["laktoze"], jogurtas: ["laktoze"], mocarela: ["laktoze"], desreles: ["laktoze"],
+  juoda_duona: ["glitimas"], dziuvesiai: ["glitimas"], makaronai: ["glitimas"], smulkus_makaronai: ["glitimas", "kiausiniai"],
+  miltai: ["glitimas"], avizos: ["glitimas"], kuskusas: ["glitimas"], tortilijos: ["glitimas"], batonas: ["glitimas"],
+  sojos_padazas: ["glitimas", "soja"], tofu: ["soja"],
+  kiausiniai: ["kiausiniai"],
+  lasisa: ["zuvis"], silke: ["zuvis"], menke: ["zuvis"],
+};
+
+export const PRODUCTS: Product[] = RAW.map((x) => ({
+  ...x,
+  ...(KIND[x.id] ? { kind: KIND[x.id] } : {}),
+  ...(ALLERGENS[x.id] ? { allergens: ALLERGENS[x.id] } : {}),
+}));
 
 export const PRODUCT_BY_ID: Record<string, Product> = Object.fromEntries(PRODUCTS.map((x) => [x.id, x]));

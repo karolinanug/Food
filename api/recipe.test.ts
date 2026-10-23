@@ -12,3 +12,11 @@ describe("/api/recipe", () => {
     expect(res.status).toBe(400);
   });
 });
+
+describe("/api/plan", async () => {
+  const { POST: plan } = await import("./plan");
+  it("atmeta neteisingą profilį", async () => {
+    const res = await plan(new Request("http://x/api/plan", { method: "POST", body: JSON.stringify({ profile: { adults: 0 }, have: [] }) }));
+    expect(res.status).toBe(400);
+  });
+});

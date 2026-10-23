@@ -4,6 +4,7 @@ import type { AppState } from "../types";
 const KEY = "meniu-state-v1";
 
 const DEFAULT_STATE: AppState = {
+  profile: null,
   stores: ["barbora", "rimi", "iki", "lidl"],
   servings: 2,
   plans: {},

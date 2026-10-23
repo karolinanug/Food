@@ -4,7 +4,7 @@ import type { StoreId } from "../types";
 import { Modal } from "./Modal";
 import { Stepper } from "./RecipeDialog";
 
-export function SettingsDialog({ onClose }: { onClose: () => void }) {
+export function SettingsDialog({ onClose, onRedo }: { onClose: () => void; onRedo: () => void }) {
   const { state, setState } = useApp();
 
   function toggleStore(id: StoreId) {
@@ -19,6 +19,7 @@ export function SettingsDialog({ onClose }: { onClose: () => void }) {
 
   return (
     <Modal title="Nustatymai" onClose={onClose}>
+      <button className="btn primary block" onClick={onRedo}>Pakeisti atsakymus ir sudaryti naują planą</button>
       <h3>Kuriose parduotuvėse perkate?</h3>
       <p className="muted small">Kainos lyginamos tik tarp pažymėtų parduotuvių.</p>
       <div className="store-toggles">

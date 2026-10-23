@@ -4,6 +4,7 @@ import { RecipeForm } from "../components/RecipeForm";
 import { useApp } from "../context";
 import { MEALS } from "../data/stores";
 import { eur } from "../lib/format";
+import { recipeAllowed } from "../lib/diet";
 import { costPerServing } from "../lib/pricing";
 import type { MealId, Recipe } from "../types";
 
@@ -16,10 +17,12 @@ export function RecipesView({ weekKey }: { weekKey: string }) {
   const [sort, setSort] = useState<Sort>("cost");
   const [viewing, setViewing] = useState<Recipe | null>(null);
   const [creating, setCreating] = useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   const q = query.trim().toLowerCase();
   const list = recipes
     .filter((r) => (!meal || r.meals.includes(meal)) && (!q || r.name.toLowerCase().includes(q) || r.tags.some((t) => t.includes(q))))
+    .filter((r) => showAll || !state.profile || recipeAllowed(r, products, state.profile))
     .map((r) => ({ r, cost: costPerServing(r, products, state.stores) }))
     .sort((a, b) =>
       sort === "cost" ? (a.cost ?? Infinity) - (b.cost ?? Infinity) : sort === "time" ? a.r.minutes - b.r.minutes : a.r.name.localeCompare(b.r.name, "lt")
@@ -41,6 +44,11 @@ export function RecipesView({ weekKey }: { weekKey: string }) {
         {MEALS.map((m) => (
           <button key={m.id} className={meal === m.id ? "chip on" : "chip"} onClick={() => setMeal(m.id)}>{m.name}</button>
         ))}
+        {state.profile && (state.profile.diet !== "viskas" || state.profile.allergies.length > 0) && (
+          <label className="check">
+            <input type="checkbox" checked={showAll} onChange={(e) => setShowAll(e.target.checked)} /> Rodyti ir netinkančius mano mitybai
+          </label>
+        )}
       </div>
 
       <div className="grid">
@@ -51,7 +59,7 @@ export function RecipesView({ weekKey }: { weekKey: string }) {
               ⏱ {r.minutes} min.{cost !== null && <> · <strong>{eur(cost)}</strong> / porc.</>}
             </span>
             <span className="tags">
-              {r.custom && <span className="tag mine">mano</span>}
+              {r.generated ? <span className="tag mine">sukurta jums</span> : r.custom && <span className="tag mine">mano</span>}
               {r.tags.map((t) => <span key={t} className="tag">{t}</span>)}
             </span>
           </button>

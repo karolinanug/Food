@@ -2,6 +2,10 @@ export type StoreId = "barbora" | "rimi" | "iki" | "lidl";
 export type Unit = "g" | "ml" | "vnt";
 export type CategoryId = "dar" | "mes" | "pie" | "duo" | "bak" | "pri";
 export type MealId = "pusryciai" | "pietus" | "vakariene";
+export type Diet = "viskas" | "vegetariska" | "veganiska" | "peskatariska";
+export type Allergen = "glitimas" | "laktoze" | "kiausiniai" | "zuvis" | "riesutai" | "soja";
+/** Kas produkte riboja mitybą: mėsa, žuvis ar kitas gyvūninis produktas (pienas, kiaušiniai, medus). */
+export type ProductKind = "mesa" | "zuvis" | "gyvulinis";
 
 export interface Offer {
   /** Kaina už vieną pakuotę (su akcija, jei ji galioja). */
@@ -23,6 +27,8 @@ export interface Product {
   loose?: boolean;
   /** Dažniausiai jau turimas namuose (druska, aliejus…). */
   pantry?: boolean;
+  kind?: ProductKind;
+  allergens?: Allergen[];
   offers: Partial<Record<StoreId, Offer>>;
 }
 
@@ -43,6 +49,8 @@ export interface Recipe {
   ingredients: Ingredient[];
   steps: string[];
   custom?: boolean;
+  /** Sugeneruotas pagal klausimyno atsakymus. */
+  generated?: boolean;
 }
 
 export interface PlanEntry {
@@ -55,7 +63,32 @@ export type WeekPlan = Record<string, PlanEntry>;
 
 export type ListMode = "mixed" | StoreId;
 
+export type Goal = "pigiau" | "sveikiau" | "greiciau" | "mazau_ismesti" | "ivairiau";
+
+/** Klausimyno atsakymai. */
+export interface Profile {
+  name: string;
+  goals: Goal[];
+  adults: number;
+  kids: number;
+  days: number;
+  meals: MealId[];
+  diet: Diet;
+  allergies: Allergen[];
+  dislikes: string;
+  /** Kalorijų tikslas vienam žmogui per dieną; 0 – nesvarbu. */
+  calories: number;
+  /** Savaitės biudžetas, EUR. */
+  budget: number;
+  /** Ilgiausias gaminimo laikas darbo dienomis, min.; 0 – nesvarbu. */
+  maxMinutes: number;
+  skill: "pradedantis" | "vidutinis" | "patyres";
+  equipment: string[];
+  cuisines: string[];
+}
+
 export interface AppState {
+  profile: Profile | null;
   stores: StoreId[];
   servings: number;
   plans: Record<string, WeekPlan>;

@@ -3,6 +3,7 @@ import { PickerDialog } from "../components/PickerDialog";
 import { RecipeDialog, Stepper } from "../components/RecipeDialog";
 import { useApp } from "../context";
 import { DAYS, MEALS } from "../data/stores";
+import { recipeAllowed } from "../lib/diet";
 import { eur } from "../lib/format";
 import { aggregate, basket } from "../lib/pricing";
 import { addDays, dayLabel, weekKey as toKey } from "../lib/week";
@@ -32,7 +33,7 @@ export function PlanView({ monday, weekKey }: { monday: Date; weekKey: string })
     setState((s) => {
       const week = { ...s.plans[weekKey] };
       const used = new Set(Object.values(week).map((e) => e.recipeId));
-      const pool = recipes.filter((r) => r.meals.includes("vakariene"));
+      const pool = recipes.filter((r) => r.meals.includes("vakariene") && (!s.profile || recipeAllowed(r, products, s.profile)));
       for (let day = 0; day < 7; day++) {
         const slot = `${day}-vakariene`;
         if (week[slot]) continue;

@@ -111,7 +111,15 @@ function Generator({ onSaved }: { onSaved: (r: Recipe) => void }) {
       const res = await fetch("/api/recipe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ have: state.home, allowExtra, meal, servings: state.servings, wishes: wishes.trim() || undefined }),
+        body: JSON.stringify({
+          have: state.home,
+          allowExtra,
+          meal,
+          servings: state.servings,
+          wishes: wishes.trim() || undefined,
+          diet: state.profile?.diet,
+          allergies: state.profile?.allergies,
+        }),
       });
       const data = await res.json().catch(() => ({}));
       if (res.status === 404) throw new Error("Receptų generavimo serveris nepasiekiamas (paleiskite per „vercel dev“ arba Vercel).");

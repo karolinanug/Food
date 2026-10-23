@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Onboarding } from "./components/Onboarding";
 import { SettingsDialog } from "./components/SettingsDialog";
 import { AppProvider } from "./context";
 import { useAppState } from "./lib/state";
@@ -25,6 +26,7 @@ export function App() {
   const [tab, setTab] = useState<TabId>(tabFromHash);
   const [offset, setOffset] = useState(0);
   const [settings, setSettings] = useState(false);
+  const [redo, setRedo] = useState(false);
 
   useEffect(() => {
     const onHash = () => setTab(tabFromHash());
@@ -37,11 +39,26 @@ export function App() {
   const title = weekLabel(monday);
   const showWeek = tab === "planas" || tab === "pirkiniai";
 
+  if (!state.profile || redo) {
+    return (
+      <AppProvider state={state} setState={setState}>
+        <Onboarding
+          onClose={state.profile ? () => setRedo(false) : undefined}
+          onDone={(start) => {
+            setRedo(false);
+            // Atidarome savaitę, nuo kurios prasideda naujas planas.
+            setOffset(Math.round((mondayOf(0, start).getTime() - mondayOf(0).getTime()) / (7 * 864e5)));
+          }}
+        />
+      </AppProvider>
+    );
+  }
+
   return (
     <AppProvider state={state} setState={setState}>
       <header className="top">
         <div className="top-row">
-          <h1>Savaitės meniu</h1>
+          <h1>{state.profile?.name ? `Labas, ${state.profile.name}!` : "Savaitės meniu"}</h1>
           <button className="icon-btn" onClick={() => setSettings(true)} aria-label="Nustatymai">⚙</button>
         </div>
         {showWeek && (
@@ -73,7 +90,15 @@ export function App() {
         {tab === "kainos" && <PricesView />}
       </main>
 
-      {settings && <SettingsDialog onClose={() => setSettings(false)} />}
+      {settings && (
+        <SettingsDialog
+          onClose={() => setSettings(false)}
+          onRedo={() => {
+            setSettings(false);
+            setRedo(true);
+          }}
+        />
+      )}
     </AppProvider>
   );
 }

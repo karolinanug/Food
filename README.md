@@ -6,6 +6,12 @@ Veikia naršyklėje ir telefone (PWA – galima įsidiegti į pradžios ekraną)
 
 ## Galimybės
 
+- **Klausimynas** (pirmą kartą atidarius) – vardas, tikslai, šeimos dydis, dienos ir valgiai, mityba,
+  alergijos, kalorijos, biudžetas, gaminimo laikas ir įgūdžiai, virtuvės įranga, mėgstamos virtuvės,
+  parduotuvės ir ką turite namuose. Pagal atsakymus DI sugeneruoja savaitės receptus (tik iš produktų,
+  kurių kainas žinome, ir be alergenų), o planas iškart sudedamas į kalendorių ir pirkinių sąrašą.
+  Jei DI nepasiekiamas, planas sudaromas iš tinkamų bibliotekos receptų. Atsakymus galima pakeisti
+  per ⚙ nustatymus.
 - **Planas** – 7 dienos × pusryčiai / pietūs / vakarienė, porcijų skaičius kiekvienam patiekalui,
   „Užpildyti vakarienes“, savaitės kainos įvertis.
 - **Receptai** – lietuviški receptai (cepelinai, šaltibarščiai, kugelis…) ir savi receptai;
@@ -31,7 +37,8 @@ npm test
 npm run build
 ```
 
-DI receptų generavimas veikia per serverio funkciją `api/recipe.ts` (Vercel).
+DI funkcijos veikia per serverio funkcijas `api/plan.ts` (savaitės planas) ir `api/recipe.ts`
+(receptas iš turimų produktų), Vercel.
 Lokaliai ją paleisite su `npx vercel dev`; reikia aplinkos kintamojo `ANTHROPIC_API_KEY`.
 Diegiant į Vercel tą patį kintamąjį nustatykite projekto nustatymuose.
 
@@ -51,9 +58,13 @@ Kad ir kokį šaltinį pasirinktumėte, jo rezultatas turi atitikti `Product` / 
 ## Struktūra
 
 ```
-api/recipe.ts          DI recepto generavimas (Claude API)
+api/plan.ts            savaitės plano generavimas pagal klausimyną (Claude API)
+api/recipe.ts          recepto generavimas iš turimų produktų
+api/_lib.ts            bendra DI logika
 src/data/              produktai su kainomis, receptai, parduotuvės
 src/lib/pricing.ts     pakuočių, krepšelio ir pigiausio derinio skaičiavimas
+src/lib/diet.ts        mityba, alergijos, porcijos, plano dienos
+src/components/Onboarding.tsx  klausimynas
 src/views/             Planas, Receptai, Namuose, Pirkiniai, Kainos
 src/components/        langai ir bendri komponentai
 ```

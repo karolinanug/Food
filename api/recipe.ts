@@ -3,7 +3,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { z } from "zod";
-import { PRODUCTS, PRODUCT_BY_ID } from "../src/data/products";
+import { PRODUCTS, PRODUCT_BY_ID } from "../src/data/products.js";
 
 const client = new Anthropic();
 

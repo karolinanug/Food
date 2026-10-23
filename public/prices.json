@@ -1,26 +1,26 @@
 {
- "generated": "2026-10-23T10:26:23.341Z",
+ "generated": "2026-10-23T10:37:35.649Z",
  "stores": {
   "rimi": {
-   "updated": "2026-10-23T10:26:23.341Z",
+   "updated": "2026-10-23T10:37:35.649Z",
    "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-10-23T10:26:23.341Z",
+   "updated": "2026-10-23T10:37:35.649Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-10-23T10:26:23.341Z",
+   "updated": "2026-10-23T10:37:35.649Z",
    "found": 4,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-10-23T10:26:23.341Z",
-   "found": 67,
+   "updated": "2026-10-23T10:37:35.649Z",
+   "found": 66,
    "total": 79
   }
  },
@@ -122,10 +122,11 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/saltai-rukyti-mesos-gaminiai/s-ruk-kiaul-sonines-kubeliai-morliny-200g/p/999202"
    },
    "lasisa": {
-    "price": 2.99,
-    "size": 100,
-    "title": "Š. r. atlant. lašišų filė RIMI SMART, 100 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/apdorota-zuvis/s-r-atlant-lasisu-file-rimi-smart-100-g/p/817345"
+    "price": 12.99,
+    "size": 1000,
+    "title": "Atšaldyta atlantinių lašišų filė, 1 kg",
+    "was": 23.99,
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/sviezios-zuvys-ir-juru-gerybes/zuvu-file/atsaldyta-atlantiniu-lasisu-file-1-kg/p/807538"
    },
    "silke": {
     "price": 1.29,
@@ -560,10 +561,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Plautos%20morkos%20CLEVER"
    },
    "cesnakai": {
-    "price": 1.59,
-    "size": 150,
-    "title": "Varškės užtepėlė su česnakais VILKYŠKIŲ, 18,5 % rieb., 150 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Var%C5%A1k%C4%97s%20u%C5%BEtep%C4%97l%C4%97%20su%20%C4%8Desnakais%20VILKY%C5%A0KI%C5%B2%2C%2018%2C5%20%25%20rieb.%2C%20150%20g"
+    "price": 0.89,
+    "size": 65,
+    "title": "Česnakinės krevetės skonio greitai paruošiami makaronai SUN YAN, 65 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C4%8Cesnakin%C4%97s%20krevet%C4%97s%20skonio%20greitai%20paruo%C5%A1iami%20makaronai%20SUN%20YAN%2C%2065%20g"
    },
    "burokeliai": {
     "price": 0.49,
@@ -855,12 +856,6 @@
     "size": 250,
     "title": "Natūralus jogurtas CLEVER 3,6% rieb., 250 g",
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Nat%C5%ABralus%20jogurtas%20CLEVER%203%2C6%25%20rieb.%2C%20250%20g"
-   },
-   "mocarela": {
-    "price": 5.79,
-    "size": 400,
-    "title": "Koldūnai su rikota, mocarela, špinatais VIČI TRADITIONAL, 400 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Kold%C5%ABnai%20su%20rikota%2C%20mocarela%2C%20%C5%A1pinatais%20VI%C4%8CI%20TRADITIONAL%2C%20400%20g"
    },
    "aviziu_gerimas": {
     "price": 2.29,

@@ -12,6 +12,8 @@ export interface Candidate {
   unitPrice?: number;
   unitPriceUnit?: "kg" | "l" | "vnt";
   url?: string;
+  /** Sveriama prekė: kaina nurodyta už kg / l, mokama už tikrą kiekį. */
+  byWeight?: boolean;
 }
 
 export interface StoreAdapter {
@@ -25,6 +27,7 @@ export interface FoundOffer {
   was?: number;
   title: string;
   url?: string;
+  loose?: boolean;
 }
 
 const BASE: Record<Unit, "kg" | "l" | "vnt"> = { g: "kg", ml: "l", vnt: "vnt" };
@@ -74,13 +77,24 @@ export function pickOffer(candidates: Candidate[], product: Product, typicalAmou
   let best: { offer: FoundOffer; cost: number } | null = null;
   for (const c of candidates) {
     if (!(c.price > 0) || !titleMatches(c.title, rule)) continue;
-    const size = packSize(c, product);
+    const loose = Boolean(product.loose || c.byWeight);
+    const size = c.byWeight ? (product.unit === "vnt" ? 1 : 1000) : packSize(c, product);
     if (!size) continue;
     // Neprotingai didelės ar mažos pakuotės (pvz. 10 kg bulvių maišas) atmetamos.
-    if (size > typicalAmount * 6 || size < typicalAmount / 20) continue;
-    const cost = product.loose ? (c.price / size) * typicalAmount : Math.ceil(typicalAmount / size - 1e-9) * c.price;
+    if (!c.byWeight && (size > typicalAmount * 6 || size < typicalAmount / 20)) continue;
+    const cost = loose ? (c.price / size) * typicalAmount : Math.ceil(typicalAmount / size - 1e-9) * c.price;
     if (!best || cost < best.cost) {
-      best = { offer: { price: c.price, size, title: c.title, ...(c.was && c.was > c.price ? { was: c.was } : {}), ...(c.url ? { url: c.url } : {}) }, cost };
+      best = {
+        offer: {
+          price: c.price,
+          size,
+          title: c.title,
+          ...(c.was && c.was > c.price ? { was: c.was } : {}),
+          ...(c.url ? { url: c.url } : {}),
+          ...(c.byWeight ? { loose: true } : {}),
+        },
+        cost,
+      };
     }
   }
   return best?.offer ?? null;

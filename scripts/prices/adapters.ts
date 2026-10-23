@@ -1,5 +1,5 @@
 // Parduotuvių paieškos adapteriai. Kiekvienas grąžina paieškos rezultatų prekes.
-import { decodeEntities, fetchText, parseUnitPrice, type Candidate, type StoreAdapter } from "./core.js";
+import { UA, decodeEntities, fetchText, parseUnitPrice, type Candidate, type StoreAdapter } from "./core.js";
 
 const num = (s: string) => Number(s.replace(/\s/g, "").replace(",", "."));
 
@@ -21,6 +21,11 @@ export function parseRimi(html: string): Candidate[] {
     const per = head.match(/Kaina už vienetą:\s*([^<]+)</)?.[1];
     const unit = per ? parseUnitPrice(per) : null;
     const href = head.match(/href="(\/e-parduotuve\/lt\/produktai\/[^"]+)"/)?.[1];
+    // Sveriamos prekės („Svogūnai, kg“): kortelėje rodoma apytikslė vieneto kaina, imame kainą už kg.
+    if (/,\s*kg\s*$/i.test(data.name) && unit?.unit === "kg") {
+      out.push({ title: data.name, price: unit.value, unitPrice: unit.value, unitPriceUnit: "kg", byWeight: true, ...(href ? { url: `https://www.rimi.lt${href}` } : {}) });
+      continue;
+    }
     out.push({
       title: data.name,
       price: Number(data.price),
@@ -88,6 +93,64 @@ export function parseMaxima(html: string): Candidate[] {
   return out;
 }
 
+/** IKI per LastMile platformą: ta pati paieškos užklausa, kurią siunčia lastmile.lt svetainė. */
+const IKI_CHAIN = "CvKfTzV4TN5U8BTMF1Hl";
+const LASTMILE_SEARCH = "https://searchservice-952707942140.europe-north1.run.app/v1/frontend-products";
+
+type Localized = string | { lt?: string; en?: string } | undefined;
+const text = (v: Localized) => (typeof v === "string" ? v : v?.lt ?? v?.en ?? "");
+
+export function parseLastMile(json: unknown): Candidate[] {
+  const products = (json as { products?: Record<string, unknown>[] })?.products ?? [];
+  const out: Candidate[] = [];
+  for (const item of products) {
+    const p = (item.frontEndProduct ?? item.product ?? item) as Record<string, unknown>;
+    const title = text((p.name ?? p.title ?? item.name) as Localized);
+    const prc = (p.prc ?? {}) as { p?: number | null; s?: number | null };
+    const regular = Number(prc.p ?? item.actualPrice ?? 0);
+    const sale = prc.s != null && Number(prc.s) > 0 ? Number(prc.s) : null;
+    const price = sale && sale < regular ? sale : regular;
+    if (!title || !(price > 0) || p.isActive === false || p.isInStock === false) continue;
+    const measure = String(p.conversionMeasure ?? "").toUpperCase();
+    const conv = Number(p.conversionValue ?? 0);
+    const unit = measure === "KG" ? "kg" : measure === "L" ? "l" : measure === "PCS" ? "vnt" : null;
+    const slug = typeof p.slug === "string" ? p.slug : null;
+    out.push({
+      title,
+      price,
+      ...(sale && sale < regular ? { was: regular } : {}),
+      ...(unit && conv > 0 ? { unitPrice: price / conv, unitPriceUnit: unit } : {}),
+      url: slug ? `https://www.lastmile.lt/lt/chain/IKI/product/${slug}` : `https://www.lastmile.lt/lt/chain/IKI/search?q=${encodeURIComponent(title)}`,
+    });
+  }
+  return out;
+}
+
+let lastMileLogged = false;
+
+async function searchLastMile(query: string): Promise<Candidate[]> {
+  const res = await fetch(LASTMILE_SEARCH, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "User-Agent": UA, Origin: "https://www.lastmile.lt", Referer: "https://www.lastmile.lt/" },
+    body: JSON.stringify({
+      limit: 60,
+      query: { text: query, languageCode: "lt" },
+      params: { type: "view_products", isActive: true, isApproved: true, sort: "karma", chainIds: [IKI_CHAIN], isUsingStockByChainId: { [IKI_CHAIN]: true } },
+      fromIndex: 0,
+    }),
+    signal: AbortSignal.timeout(25000),
+  });
+  if (!res.ok) throw new Error(`${res.status} LastMile`);
+  const json = await res.json();
+  const items = parseLastMile(json);
+  if (!lastMileLogged) {
+    lastMileLogged = true;
+    const first = (json as { products?: Record<string, unknown>[] }).products?.[0];
+    console.log("  LastMile pavyzdys:", JSON.stringify(first?.frontEndProduct ?? first)?.replace(/"storeIds":\[[^\]]*\]/, '"storeIds":[…]').slice(0, 1500));
+  }
+  return items;
+}
+
 let maximaCache: Promise<Candidate[]> | null = null;
 
 export const ADAPTERS: (StoreAdapter & { partial?: boolean })[] = [
@@ -100,6 +163,10 @@ export const ADAPTERS: (StoreAdapter & { partial?: boolean })[] = [
     // Barbora blokuoja automatines užklausas, todėl imame Maxima parduotuvių savaitės pasiūlymus.
     partial: true,
     search: async () => (maximaCache ??= fetchText("https://www.maxima.lt/pasiulymai").then(parseMaxima)),
+  },
+  {
+    id: "iki",
+    search: searchLastMile,
   },
   {
     id: "lidl",

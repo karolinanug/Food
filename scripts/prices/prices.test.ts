@@ -62,3 +62,19 @@ describe("Maxima pasiūlymai", async () => {
     expect(items[0]).toMatchObject({ title: "Mandarinai, 1 kg", price: 1.79, was: 2.49 });
   });
 });
+
+describe("sveriamos prekės", () => {
+  it("Rimi „…, kg“ prekėms naudoja kainą už kg ir moka už tikrą kiekį", () => {
+    const html = `<div data-gtm-eec-product='{"name":"Česnakai, kg","price":0.49}' > <p class="card__price-per"> <span class="sr-only"> Kaina už vienetą: 4,99 €/kg </span></p>`;
+    const [c] = parseRimi(html);
+    expect(c).toMatchObject({ price: 4.99, byWeight: true });
+    const offer = pickOffer([c], PRODUCT_BY_ID.cesnakai, 100, RULES.cesnakai)!;
+    expect(offer).toMatchObject({ price: 4.99, size: 1000, loose: true });
+  });
+  it("taisyklės atmeta jūros kopūstus, putpelių kiaušinius ir greitą sriubą", () => {
+    expect(titleMatches("Jūros kopūstai su aliejumi, 1 kg", RULES.kopustas)).toBe(false);
+    expect(titleMatches("Putpelių kiaušiniai RIMI, 12 vnt", RULES.kiausiniai)).toBe(false);
+    expect(titleMatches("Makaronų sriuba aštr. višt. sk. MAGGI, 59,2 g", RULES.smulkus_makaronai)).toBe(false);
+    expect(titleMatches("Smulkūs makaronai sriubai, 400 g", RULES.smulkus_makaronai)).toBe(true);
+  });
+});

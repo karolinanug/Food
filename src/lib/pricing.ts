@@ -30,7 +30,7 @@ export function cheapestUnitPrice(product: Product, stores: StoreId[]): number |
 export function lineCost(product: Product, amount: number, store: StoreId): { packs: number; cost: number } | null {
   const offer = product.offers[store];
   if (!offer) return null;
-  if (product.loose) return { packs: amount / offer.size, cost: (offer.price / offer.size) * amount };
+  if (product.loose || offer.loose) return { packs: amount / offer.size, cost: (offer.price / offer.size) * amount };
   const packs = Math.max(1, Math.ceil(amount / offer.size - 1e-9));
   return { packs, cost: packs * offer.price };
 }

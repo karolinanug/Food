@@ -17,6 +17,8 @@ export interface Offer {
   /** Tikros prekės pavadinimas ir nuoroda parduotuvėje (kai kaina surinkta iš parduotuvės). */
   title?: string;
   url?: string;
+  /** Sveriama prekė: price – už size kiekį, mokama už tikrą kiekį. */
+  loose?: boolean;
 }
 
 export interface Product {

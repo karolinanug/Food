@@ -1,25 +1,25 @@
 {
- "generated": "2026-10-23T10:37:35.649Z",
+ "generated": "2026-10-23T10:46:18.434Z",
  "stores": {
   "rimi": {
-   "updated": "2026-10-23T10:37:35.649Z",
+   "updated": "2026-10-23T10:46:18.434Z",
    "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-10-23T10:37:35.649Z",
+   "updated": "2026-10-23T10:46:18.434Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-10-23T10:37:35.649Z",
+   "updated": "2026-10-23T10:46:18.434Z",
    "found": 4,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-10-23T10:37:35.649Z",
+   "updated": "2026-10-23T10:46:18.434Z",
    "found": 66,
    "total": 79
   }

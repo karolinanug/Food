@@ -97,3 +97,7 @@ describe("„su“ priedai", () => {
     expect(titleMatches("Š. r. atlant. lašišų filė RIMI SMART, 100 g", RULES.lasisa)).toBe(false);
   });
 });
+
+it("atmeta „…skonio“ ir greitai paruošiamus produktus", () => {
+  expect(titleMatches("Česnakinės krevetės skonio greitai paruošiami makaronai SUN, 65 g", RULES.cesnakai)).toBe(false);
+});

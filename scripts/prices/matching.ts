@@ -111,7 +111,7 @@ export const RULES: Record<string, MatchRule> = {
 };
 
 /** Visada atmetama: gyvūnų ir kūdikių maistas, paruošti patiekalai. */
-const GLOBAL_NOT = ["pasar", "sunim", "suniu", "katem", "kaciu", "gyvun", "kudik", "tyrel", "men.)", "sefai", "paruost", "su padazu"];
+const GLOBAL_NOT = ["skonio", "paruosiam", "pasar", "sunim", "suniu", "katem", "kaciu", "gyvun", "kudik", "tyrel", "men.)", "sefai", "paruost", "su padazu"];
 
 /** Mažosios raidės, be diakritikų, vienas tarpas. */
 export function normalize(s: string): string {

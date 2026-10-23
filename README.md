@@ -44,16 +44,26 @@ Diegiant į Vercel tą patį kintamąjį nustatykite projekto nustatymuose.
 
 ## Kainų duomenys
 
-⚠️ Kainos faile `src/data/products.ts` yra **pavyzdinės**. Lietuvos prekybos tinklai viešo
-kainų API neteikia, todėl tikriems duomenims reikės pasirinkti šaltinį:
+Kainas kasdien (~6:23 Lietuvos laiku) surenka GitHub Actions darbas `.github/workflows/prices.yml`:
+`scripts/prices/update.ts` ieško kiekvieno katalogo produkto parduotuvėse, pagal taisykles
+(`scripts/prices/matching.ts`) atrenka tinkamą prekę ir įrašo rezultatą į `public/prices.json`.
+Pakeitimas įrašomas į repo, Vercel jį įdiegia, o appsas kainas įkelia paleidimo metu.
 
-1. **Oficialus bendradarbiavimas** su tinklais (Barbora, Rimi, IKI, Lidl) arba jų partnerių programos.
-2. **Kainų agregatoriai** – licencijuoti duomenys iš esamų kainų palyginimo paslaugų.
-3. **Savas duomenų rinkimas** iš e. parduotuvių. Prieš tai būtina patikrinti kiekvieno tinklo
-   naudojimo sąlygas ir teisinius apribojimus.
+| Parduotuvė | Šaltinis | Kas surenkama |
+|---|---|---|
+| Rimi | rimi.lt e. parduotuvės paieška | visas asortimentas |
+| Lidl | lidl.lt paieška | tik internete skelbiamos prekės (daugiausia akcijos) |
+| Barbora (Maxima) | maxima.lt savaitės pasiūlymai | tik akcijos; barbora.lt blokuoja automatines užklausas |
+| IKI | – | kol kas pavyzdinės kainos |
 
-Kad ir kokį šaltinį pasirinktumėte, jo rezultatas turi atitikti `Product` / `Offer` tipus
-(`src/types.ts`), o kainų logika (`src/lib/pricing.ts`) liks nepakitusi.
+Parduotuvėms be duomenų rodomos pavyzdinės kainos su žyma „pvz.“. Jei parduotuvės svetainė
+pasikeičia ir rinkiklis beveik nieko neranda, paliekami ankstesni duomenys.
+
+Rankinis paleidimas: GitHub → Actions → „Kainų atnaujinimas“ → Run workflow, arba lokaliai
+`npx tsx scripts/prices/update.ts --stores=rimi --products=bulves,pienas`.
+
+Prekių parinkimą galima tikslinti `matching.ts`: `query` – paieškos frazė, `must` – žodžiai,
+kurie turi būti pavadinime, `not` – žodžiai, dėl kurių prekė atmetama.
 
 ## Struktūra
 
@@ -61,6 +71,8 @@ Kad ir kokį šaltinį pasirinktumėte, jo rezultatas turi atitikti `Product` / 
 api/plan.ts            savaitės plano generavimas pagal klausimyną (Claude API)
 api/recipe.ts          recepto generavimas iš turimų produktų
 api/_lib.ts            bendra DI logika
+scripts/prices/        kainų rinkiklis (adapteriai, taisyklės, atnaujinimas)
+public/prices.json     surinktos kainos
 src/data/              produktai su kainomis, receptai, parduotuvės
 src/lib/pricing.ts     pakuočių, krepšelio ir pigiausio derinio skaičiavimas
 src/lib/diet.ts        mityba, alergijos, porcijos, plano dienos

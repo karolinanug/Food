@@ -1,10 +1,12 @@
 // Bendra DI funkcijų logika. Failai, prasidedantys „_“, Vercel'yje netampa atskiromis funkcijomis.
+import { readFileSync } from "node:fs";
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { z } from "zod";
-import { PRODUCTS, PRODUCT_BY_ID } from "../src/data/products.js";
+import { PRODUCTS as DEMO_PRODUCTS, PRODUCT_BY_ID } from "../src/data/products.js";
 import { STORES } from "../src/data/stores.js";
 import { productAllowed } from "../src/lib/diet.js";
+import { applyLivePrices, type PricesFile } from "../src/lib/livePrices.js";
 import { cheapestUnitPrice } from "../src/lib/pricing.js";
 import type { Allergen, Diet, Product } from "../src/types.js";
 
@@ -21,6 +23,16 @@ export const DietSchema = z.enum(["viskas", "vegetariska", "veganiska", "peskata
 export const MealSchema = z.enum(["pusryciai", "pietus", "vakariene"]);
 
 const ALL_STORES = STORES.map((s) => s.id);
+
+/** Katalogas su naujausiomis surinktomis kainomis (jei prices.json yra), kad DI matytų tikras kainas. */
+const PRODUCTS = (() => {
+  try {
+    const file = JSON.parse(readFileSync(new URL("../public/prices.json", import.meta.url), "utf8")) as PricesFile;
+    return applyLivePrices(DEMO_PRODUCTS, file);
+  } catch {
+    return DEMO_PRODUCTS;
+  }
+})();
 
 /** Produktai, kuriuos DI gali naudoti: tik iš katalogo (kad veiktų kainų palyginimas) ir tinkantys mitybai. */
 export function allowedProducts(diet: Diet, allergies: Allergen[], only?: string[]): Product[] {

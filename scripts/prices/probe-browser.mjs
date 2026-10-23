@@ -1,20 +1,23 @@
-// LastMile (IKI) paieška naršyklėje: kokius JSON atsakymus gauna puslapis.
+// LastMile (IKI): kaip atrodo prekių paieškos užklausa.
 import { chromium } from "playwright";
 const browser = await chromium.launch();
 const page = await browser.newPage({ locale: "lt-LT" });
 const seen = [];
-page.on("response", async (res) => {
-  const ct = res.headers()["content-type"] ?? "";
-  if (!/json|text\/plain/.test(ct)) return;
-  try {
-    const body = await res.text();
-    if (/prc|actualPrice|convertedPrice|price/i.test(body)) seen.push([res.request().method(), res.url(), res.request().postData()?.slice(0, 600), body.slice(0, 2500)]);
-  } catch {}
+page.on("request", (req) => {
+  if (req.url().includes("searchservice") && req.method() === "POST") seen.push(req);
 });
-await page.goto("https://www.lastmile.lt/lt/chain/IKI/search?query=sviestas", { waitUntil: "domcontentloaded", timeout: 60000 });
-await page.waitForTimeout(15000);
-console.log("title", await page.title());
-for (const [m, u, post, body] of seen.slice(0, 8)) console.log(`\n--- ${m} ${u}\nPOST: ${post}\nBODY: ${body.replace(/\s+/g, " ")}`);
-const text = (await page.innerText("body")).slice(0, 2000);
-console.log("\nBODY TEXT:", text.replace(/\s+/g, " "));
+await page.goto("https://www.lastmile.lt/lt/chain/IKI", { waitUntil: "domcontentloaded", timeout: 60000 });
+await page.waitForTimeout(8000);
+const before = seen.length;
+const input = page.locator('input[type="search"], input[placeholder*="Ieškoti"], input[placeholder*="ieškoti"]').first();
+await input.click({ timeout: 10000 }).catch((e) => console.log("no input", String(e)));
+await input.fill("sviestas").catch(() => {});
+await input.press("Enter").catch(() => {});
+await page.waitForTimeout(12000);
+console.log("url after search:", page.url());
+for (const req of seen.slice(before)) {
+  const res = await req.response();
+  const body = res ? (await res.text().catch(() => "")) : "";
+  console.log(`\n--- ${req.url()}\nPOST: ${req.postData()}\nBODY(${body.length}): ${body.slice(0, 3000)}`);
+}
 await browser.close();

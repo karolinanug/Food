@@ -1,19 +1,20 @@
-// Barbora per tikrą naršyklę.
+// LastMile (IKI) paieška naršyklėje: kokius JSON atsakymus gauna puslapis.
 import { chromium } from "playwright";
 const browser = await chromium.launch();
 const page = await browser.newPage({ locale: "lt-LT" });
-for (const url of ["https://barbora.lt/paieska?q=pienas", "https://iki.lt/"]) {
+const seen = [];
+page.on("response", async (res) => {
+  const ct = res.headers()["content-type"] ?? "";
+  if (!/json|text\/plain/.test(ct)) return;
   try {
-    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
-    await page.waitForTimeout(12000);
-    const html = await page.content();
-    console.log(`\n===== ${url} title=${await page.title()} len=${html.length}`);
-    for (const m of ["b_productList", "Just a moment", "data-b-for-cart", "\"price\""]) {
-      const i = html.indexOf(m);
-      if (i >= 0) console.log(`--- ${m}: ${html.slice(Math.max(0, i - 200), i + 2500).replace(/\s+/g, " ")}`);
-    }
-  } catch (e) {
-    console.log(url, "ERROR", String(e));
-  }
-}
+    const body = await res.text();
+    if (/prc|actualPrice|convertedPrice|price/i.test(body)) seen.push([res.request().method(), res.url(), res.request().postData()?.slice(0, 600), body.slice(0, 2500)]);
+  } catch {}
+});
+await page.goto("https://www.lastmile.lt/lt/chain/IKI/search?query=sviestas", { waitUntil: "networkidle", timeout: 60000 });
+await page.waitForTimeout(5000);
+console.log("title", await page.title());
+for (const [m, u, post, body] of seen.slice(0, 8)) console.log(`\n--- ${m} ${u}\nPOST: ${post}\nBODY: ${body.replace(/\s+/g, " ")}`);
+const text = (await page.innerText("body")).slice(0, 2000);
+console.log("\nBODY TEXT:", text.replace(/\s+/g, " "));
 await browser.close();

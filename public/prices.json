@@ -1,25 +1,25 @@
 {
- "generated": "2026-10-24T08:15:42.002Z",
+ "generated": "2026-10-25T08:33:35.528Z",
  "stores": {
   "rimi": {
-   "updated": "2026-10-24T08:15:42.002Z",
+   "updated": "2026-10-25T08:33:35.528Z",
    "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-10-24T08:15:42.002Z",
+   "updated": "2026-10-25T08:33:35.528Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-10-24T08:15:42.002Z",
+   "updated": "2026-10-25T08:33:35.528Z",
    "found": 7,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-10-24T08:15:42.002Z",
+   "updated": "2026-10-25T08:33:35.528Z",
    "found": 66,
    "total": 79
   }
@@ -27,10 +27,11 @@
  "offers": {
   "rimi": {
    "bulves": {
-    "price": 0.72,
-    "size": 1600,
-    "title": "Šviež. liet. Bulvės GALA/ PAROL,kl.2,d.45+,1k",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/bulves/sviez-liet-bulves-gala-parol-kl-2-d-45-1k/p/244679"
+    "price": 0.89,
+    "size": 1000,
+    "title": "Fas.bulvės liet.patiekalams 45+, kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/bulves/fas-bulves-liet-patiekalams-45-kg/p/931917",
+    "loose": true
    },
    "svogunai": {
     "price": 0.45,
@@ -72,11 +73,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/lietuviski-sviezi-baltaguziai-kopustai-1-kg/p/244676"
    },
    "agurkai": {
-    "price": 2.99,
-    "size": 1000,
-    "title": "Lietuviški trumpavaisiai agurkai, kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/lietuviski-trumpavaisiai-agurkai-kg/p/245039",
-    "loose": true
+    "price": 0.95,
+    "size": 250,
+    "title": "Lietuviškas ilgavaisis agurkas RIMI, 1 vnt",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/lietuviskas-ilgavaisis-agurkas-rimi-1-vnt/p/975432"
    },
    "pomidorai": {
     "price": 2.28,
@@ -185,14 +185,14 @@
    "dziuvesiai": {
     "price": 1.99,
     "size": 350,
-    "title": "Auksaspalviai džiūvėsėliai CITY TASTE, 350 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/auksaspalviai-dziuveseliai-city-taste-350-g/p/1014224"
+    "title": "Džiūvėsėliai su paprika CITY TASTE, 350g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/dziuveseliai-su-paprika-city-taste-350g/p/1013005"
    },
    "grikiai": {
-    "price": 1.69,
+    "price": 1.79,
     "size": 800,
-    "title": "Grikių kruopos EKOFRISA, 800 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/grikiu-kruopos-ekofrisa-800-g/p/129516"
+    "title": "Grikių kruopos RIMI SMART, 800 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/grikiu-kruopos-rimi-smart-800-g/p/804281"
    },
    "ryziai": {
     "price": 0.58,
@@ -820,11 +820,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Saul%C4%97gr%C4%85%C5%BE%C5%B3%20aliejus%20CLEVER%2C%201%20l"
    },
    "paprikos": {
-    "price": 1.69,
+    "price": 2.99,
     "size": 1000,
-    "title": "Žaliosios paprikos ",
-    "was": 2.99,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C5%BDaliosios%20paprikos%20"
+    "title": "Raudonosios paprikos",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Raudonosios%20paprikos"
    },
    "spinatai": {
     "price": 0.99,

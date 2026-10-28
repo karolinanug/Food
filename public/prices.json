@@ -1,25 +1,25 @@
 {
- "generated": "2026-10-27T09:09:45.462Z",
+ "generated": "2026-10-28T09:51:03.422Z",
  "stores": {
   "rimi": {
-   "updated": "2026-10-27T09:09:45.462Z",
+   "updated": "2026-10-28T09:51:03.422Z",
    "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-10-27T09:09:45.462Z",
+   "updated": "2026-10-28T09:51:03.422Z",
    "found": 13,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-10-27T09:09:45.462Z",
+   "updated": "2026-10-28T09:51:03.422Z",
    "found": 3,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-10-27T09:09:45.462Z",
+   "updated": "2026-10-28T09:51:03.422Z",
    "found": 66,
    "total": 79
   }
@@ -27,11 +27,10 @@
  "offers": {
   "rimi": {
    "bulves": {
-    "price": 0.89,
-    "size": 1000,
-    "title": "Fas.bulvės liet.patiekalams 45+, kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/bulves/fas-bulves-liet-patiekalams-45-kg/p/931917",
-    "loose": true
+    "price": 0.72,
+    "size": 1600,
+    "title": "Šviež. liet. Bulvės GALA/ PAROL,kl.2,d.45+,1k",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/bulves/sviez-liet-bulves-gala-parol-kl-2-d-45-1k/p/244679"
    },
    "svogunai": {
     "price": 0.48,
@@ -79,10 +78,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/lietuviskas-ilgavaisis-agurkas-rimi-1-vnt/p/975432"
    },
    "pomidorai": {
-    "price": 2.19,
+    "price": 2.28,
     "size": 1000,
-    "title": "Geltonieji pomidorai (82-102 mm), 1 kl., 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/geltonieji-pomidorai-82-102-mm-1-kl-1-kg/p/288721"
+    "title": "Juodieji pomidorai KUMATO (57-67 mm),1kl.,1kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/juodieji-pomidorai-kumato-57-67-mm-1kl-1kg/p/295995"
    },
    "pievagrybiai": {
     "price": 2.69,
@@ -272,10 +271,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 1.46,
-    "size": 1000,
-    "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
+    "price": 1.89,
+    "size": 200,
+    "title": "Mažosios paprikos RIMI, 1 kl., 200 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/mazosios-paprikos-rimi-1-kl-200-g/p/296792"
    },
    "cukinijos": {
     "price": 1.99,
@@ -601,10 +600,9 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pievagrybiai%2C%20400%20g"
    },
    "obuoliai": {
-    "price": 0.99,
+    "price": 1.39,
     "size": 1000,
     "title": "Sveriami obuoliai RAUDONIEJI",
-    "was": 1.39,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sveriami%20obuoliai%20RAUDONIEJI"
    },
    "kiaulienos_farsas": {
@@ -806,11 +804,11 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Raudonosios%20paprikos"
    },
    "spinatai": {
-    "price": 0.95,
+    "price": 0.99,
     "size": 100,
-    "title": "Mažieji špinatai IKI, 100 g",
-    "was": 1.19,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ma%C5%BEieji%20%C5%A1pinatai%20IKI%2C%20100%20g"
+    "title": "Plauti špinatai FIT&EASY, 100 g",
+    "was": 1.79,
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Plauti%20%C5%A1pinatai%20FIT%26EASY%2C%20100%20g"
    },
    "bananai": {
     "price": 1.29,

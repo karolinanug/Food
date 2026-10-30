@@ -1,25 +1,25 @@
 {
- "generated": "2026-10-29T10:11:14.603Z",
+ "generated": "2026-10-30T10:13:07.240Z",
  "stores": {
   "rimi": {
-   "updated": "2026-10-29T10:11:14.603Z",
+   "updated": "2026-10-30T10:13:07.240Z",
    "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-10-29T10:11:14.603Z",
+   "updated": "2026-10-30T10:13:07.240Z",
    "found": 13,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-10-29T10:11:14.603Z",
-   "found": 3,
+   "updated": "2026-10-30T10:13:07.240Z",
+   "found": 4,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-10-29T10:11:14.603Z",
+   "updated": "2026-10-30T10:13:07.240Z",
    "found": 66,
    "total": 79
   }
@@ -129,10 +129,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/sviezios-zuvys-ir-juru-gerybes/zuvu-file/atsaldyta-atlantiniu-lasisu-file-1-kg/p/807538"
    },
    "silke": {
-    "price": 1.05,
-    "size": 240,
-    "title": "Sūd. atl. silkių filė aliej. RIMI SMART, 240g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/sud-atl-silkiu-file-aliej-rimi-smart-240g/p/811810"
+    "price": 1.29,
+    "size": 1000,
+    "title": "Atlant. silkių filė su priesk. aliejuje, 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/atlant-silkiu-file-su-priesk-aliejuje-1-kg/p/900856"
    },
    "grietine": {
     "price": 1.5,
@@ -273,10 +273,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 2.99,
-    "size": 500,
-    "title": "Paprikų rinkinys, 500 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/papriku-rinkinys-500-g/p/214959"
+    "price": 1.46,
+    "size": 1000,
+    "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
    },
    "cukinijos": {
     "price": 1.99,
@@ -536,23 +536,30 @@
     "size": 200,
     "title": "PILOS Sviestas 82 %, 200 g",
     "url": "https://www.lidl.lt/p/pilos-sviestas-82/p11461471"
+   },
+   "medus": {
+    "price": 9.99,
+    "size": 500,
+    "title": "DELUXE Akacijų medus su koriu, 500 g",
+    "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
    }
   },
   "iki": {
    "bulves": {
-    "price": 0.59,
+    "price": 0.49,
     "size": 1000,
     "title": "Sveriamos bulvės CLEVER ",
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sveriamos%20bulv%C4%97s%20CLEVER%20"
    },
    "svogunai": {
-    "price": 0.59,
+    "price": 0.49,
     "size": 1000,
     "title": "Svogūnai CLEVER ",
+    "was": 0.59,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Svog%C5%ABnai%20CLEVER%20"
    },
    "morkos": {
-    "price": 0.75,
+    "price": 0.69,
     "size": 1000,
     "title": "Plautos morkos CLEVER",
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Plautos%20morkos%20CLEVER"
@@ -576,7 +583,7 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Marinuoti%20burok%C4%97liai%20SPILVA%20KLASIKA%2C%20570%20g"
    },
    "agurkai": {
-    "price": 3.69,
+    "price": 3.99,
     "size": 1000,
     "title": "Lietuviški trumpavaisiai agurkai",
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Lietuvi%C5%A1ki%20trumpavaisiai%20agurkai"
@@ -800,8 +807,8 @@
    "paprikos": {
     "price": 2.99,
     "size": 1000,
-    "title": "Raudonosios paprikos",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Raudonosios%20paprikos"
+    "title": "Žaliosios paprikos ",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C5%BDaliosios%20paprikos%20"
    },
    "spinatai": {
     "price": 0.99,
@@ -853,10 +860,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Nat%C5%ABralus%20jogurtas%20CLEVER%203%2C6%25%20rieb.%2C%20250%20g"
    },
    "aviziu_gerimas": {
-    "price": 2.29,
+    "price": 2.49,
     "size": 1000,
-    "title": "Ekologiškas avižų gėrimas MARGĖ, 1 l",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ekologi%C5%A1kas%20avi%C5%BE%C5%B3%20g%C4%97rimas%20MARG%C4%96%2C%201%20l"
+    "title": "Ekologiškas avižų gėrimas be cukraus BILLA BIO, 1 l",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ekologi%C5%A1kas%20avi%C5%BE%C5%B3%20g%C4%97rimas%20be%20cukraus%20BILLA%20BIO%2C%201%20l"
    },
    "batonas": {
     "price": 0.32,
@@ -889,7 +896,7 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Konservuotos%20raudonosios%20pupel%C4%97s%20HEINZ%20RED%20KIDNEY%20BEANS%2C%20400%20g"
    },
    "tofu": {
-    "price": 0.89,
+    "price": 0.99,
     "size": 160,
     "title": "Natūralus tofu LUNTER, 160 g",
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Nat%C5%ABralus%20tofu%20LUNTER%2C%20160%20g"

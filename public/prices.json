@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-01T10:38:44.202Z",
+ "generated": "2026-11-02T11:25:46.845Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-01T10:38:44.202Z",
+   "updated": "2026-11-02T11:25:46.845Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-01T10:38:44.202Z",
+   "updated": "2026-11-02T11:25:46.845Z",
    "found": 13,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-01T10:38:44.202Z",
+   "updated": "2026-11-02T11:25:46.845Z",
    "found": 6,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-01T10:38:44.202Z",
+   "updated": "2026-11-02T11:25:46.845Z",
    "found": 66,
    "total": 79
   }
@@ -524,13 +524,6 @@
    }
   },
   "lidl": {
-   "morkos": {
-    "price": 0.33,
-    "size": 1000,
-    "title": "Morkos, 1 kg",
-    "was": 0.69,
-    "url": "https://www.lidl.lt/p/morkos/p11151140"
-   },
    "grietine": {
     "price": 1.99,
     "size": 500,
@@ -538,10 +531,11 @@
     "url": "https://www.lidl.lt/p/grietine/p11461626"
    },
    "varske": {
-    "price": 2.69,
-    "size": 550,
-    "title": "PILOS Pusriebė varškė XXL, 550 g",
-    "url": "https://www.lidl.lt/p/pilos-pusriebe-varske-xxl/p11462323"
+    "price": 3.69,
+    "size": 1000,
+    "title": "Pilos Pusriebė varškė, 1 kg",
+    "was": 4.89,
+    "url": "https://www.lidl.lt/p/pilos-pusriebe-varske/p11455339"
    },
    "kiausiniai": {
     "price": 1.79,
@@ -550,16 +544,22 @@
     "url": "https://www.lidl.lt/p/kiausiniai/p11474570"
    },
    "sviestas": {
-    "price": 0.99,
-    "size": 200,
-    "title": "PILOS Sviestas 82 %, 200 g",
-    "url": "https://www.lidl.lt/p/pilos-sviestas-82/p11461471"
+    "price": 2.49,
+    "size": 500,
+    "title": "PILOS Sviestas XXL, 500 g",
+    "url": "https://www.lidl.lt/p/pilos-sviestas-xxl/p11426644"
    },
    "medus": {
     "price": 9.99,
     "size": 500,
     "title": "DELUXE Akacijų medus su koriu, 500 g",
     "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
+   },
+   "kumpis": {
+    "price": 3.99,
+    "size": 150,
+    "title": "Deluxe Serrano kumpis „Gran Reserva“, 150 g",
+    "url": "https://www.lidl.lt/p/deluxe-serrano-kumpis-gran-reserva/p11274013"
    }
   },
   "iki": {
@@ -606,9 +606,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Lietuvi%C5%A1ki%20trumpavaisiai%20agurkai"
    },
    "pomidorai": {
-    "price": 2.99,
+    "price": 2.49,
     "size": 1000,
     "title": "Kekiniai pomidorai ",
+    "was": 3.49,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Kekiniai%20pomidorai%20"
    },
    "petrazoles": {
@@ -842,9 +843,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Bananai%20BON%20VIA"
    },
    "imbieras": {
-    "price": 3.99,
+    "price": 2.79,
     "size": 1000,
     "title": "Imbieras",
+    "was": 3.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Imbieras"
    },
    "kalakutienos_farsas": {
@@ -866,10 +868,11 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Virtas%20kiaulienos%20kumpis%20CLEVER%2C%20100%20g"
    },
    "desreles": {
-    "price": 1.09,
-    "size": 260,
-    "title": "Virtos pieniškos dešrelės, a.r., CLEVER, 260 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Virtos%20pieni%C5%A1kos%20de%C5%A1rel%C4%97s%2C%20a.r.%2C%20CLEVER%2C%20260%20g"
+    "price": 0.98,
+    "size": 310,
+    "title": "Virtos pieniškos dešrelės SAMSONO, a. r., 310 g",
+    "was": 3.29,
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Virtos%20pieni%C5%A1kos%20de%C5%A1rel%C4%97s%20SAMSONO%2C%20a.%20r.%2C%20310%20g"
    },
    "jogurtas": {
     "price": 0.59,

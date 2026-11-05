@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-03T11:02:25.764Z",
+ "generated": "2026-11-05T11:10:44.208Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-03T11:02:25.764Z",
-   "found": 66,
+   "updated": "2026-11-05T11:10:44.208Z",
+   "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-03T11:02:25.764Z",
-   "found": 12,
+   "updated": "2026-11-05T11:10:44.208Z",
+   "found": 14,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-03T11:02:25.764Z",
+   "updated": "2026-11-05T11:10:44.208Z",
    "found": 6,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-03T11:02:25.764Z",
+   "updated": "2026-11-05T11:10:44.208Z",
    "found": 66,
    "total": 79
   }
@@ -33,14 +33,14 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/bulves/sviez-liet-bulves-gala-parol-kl-2-d-45-1k/p/244679"
    },
    "svogunai": {
-    "price": 0.48,
+    "price": 0.45,
     "size": 1000,
     "title": "Svogūnai d.40-60mm, kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/svogunai-porai-ir-cesnakai/svogunai-d-40-60mm-kg/p/937069",
     "loose": true
    },
    "morkos": {
-    "price": 0.72,
+    "price": 0.69,
     "size": 1000,
     "title": "Plautos morkos, kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/morkos/plautos-morkos-kg/p/272768",
@@ -72,17 +72,16 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/lietuviski-sviezi-baltaguziai-kopustai-1-kg/p/244676"
    },
    "agurkai": {
-    "price": 3.49,
-    "size": 1000,
-    "title": "Lietuviški trumpavaisiai agurkai, kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/lietuviski-trumpavaisiai-agurkai-kg/p/245039",
-    "loose": true
+    "price": 0.95,
+    "size": 250,
+    "title": "Lietuviškas ilgavaisis agurkas RIMI, 1 vnt",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/lietuviskas-ilgavaisis-agurkas-rimi-1-vnt/p/975432"
    },
    "pomidorai": {
-    "price": 1.96,
+    "price": 2.28,
     "size": 1000,
-    "title": "Oranžiniai pomidorai su šakele, 1 kl., 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/oranziniai-pomidorai-su-sakele-1-kl-1-kg/p/268812"
+    "title": "Juodieji pomidorai KUMATO (57-67 mm),1kl.,1kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/juodieji-pomidorai-kumato-57-67-mm-1kl-1kg/p/295995"
    },
    "pievagrybiai": {
     "price": 2.69,
@@ -273,16 +272,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 0.3,
-    "size": 1000,
-    "title": "Raudonos aitriosios paprikos, 1kl.,1kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/raudonos-aitriosios-paprikos-1kl-1kg/p/210112"
-   },
-   "cukinijos": {
-    "price": 1.99,
+    "price": 1.89,
     "size": 200,
-    "title": "Ekol. žalios cukinijos RIMI ECO, 1 vnt.",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/moliugai-ir-cukinijos/ekol-zalios-cukinijos-rimi-eco-1-vnt-/p/916576"
+    "title": "Mažosios paprikos RIMI, 1 kl., 200 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/mazosios-paprikos-rimi-1-kl-200-g/p/296792"
    },
    "brokoliai": {
     "price": 1.65,
@@ -303,7 +296,7 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/vaisiai-ir-uogos/bananai/bananai-cavendish-20-cm-1kg/p/270939"
    },
    "imbieras": {
-    "price": 0.86,
+    "price": 0.88,
     "size": 1000,
     "title": "Imbierų šaknys, 1kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/burokeliai-ir-kiti-sakniavaisiai/imbieru-saknys-1kg/p/276593"
@@ -359,10 +352,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/augaliniai-produktai/augaliniai-gerimai/augaliniai-gerimai/ekol-avizu-gerimas-salling-veggie-1-l/p/816757"
    },
    "batonas": {
-    "price": 0.99,
-    "size": 500,
-    "title": "Raikytas pieniškas XXL batonas, 500 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-pieniskas-xxl-batonas-500-g/p/998793"
+    "price": 0.32,
+    "size": 300,
+    "title": "Raikytas batonas RIMI SMART, 300 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-batonas-rimi-smart-300-g/p/814929"
    },
    "lesiai": {
     "price": 1.35,
@@ -453,6 +446,20 @@
     "was": 1.55,
     "url": "https://www.maxima.lt/pasiulymai"
    },
+   "kiaulienos_farsas": {
+    "price": 0.95,
+    "size": 350,
+    "title": "Šviežias kiaulienos faršas BIOVELA, rieb. ne daugiau 20 %, 350 g",
+    "was": 1.29,
+    "url": "https://www.maxima.lt/pasiulymai"
+   },
+   "sonine": {
+    "price": 1.99,
+    "size": 140,
+    "title": "Šaltai rūkyta kiaulienos šoninė BIOVELA, a. r., 140 g",
+    "was": 2.79,
+    "url": "https://www.maxima.lt/pasiulymai"
+   },
    "lasisa": {
     "price": 13.99,
     "size": 1000,
@@ -531,7 +538,7 @@
     "url": "https://www.lidl.lt/p/pilos-pusriebe-varske/p11455339"
    },
    "kiausiniai": {
-    "price": 1.79,
+    "price": 1.69,
     "size": 10,
     "title": "Kiaušiniai, 10 vnt.",
     "url": "https://www.lidl.lt/p/kiausiniai/p11474570"
@@ -539,13 +546,13 @@
    "sviestas": {
     "price": 2.49,
     "size": 500,
-    "title": "PILOS Sviestas XXL, 500 g",
+    "title": "Pilos Sviestas XXL, 500 g",
     "url": "https://www.lidl.lt/p/pilos-sviestas-xxl/p11426644"
    },
    "medus": {
     "price": 9.99,
     "size": 500,
-    "title": "DELUXE Akacijų medus su koriu, 500 g",
+    "title": "Deluxe Akacijų medus su koriu, 500 g",
     "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
    },
    "kumpis": {
@@ -612,17 +619,16 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Petra%C5%BEol%C4%97s%20vazon%C4%97lyje%2C%201%20vnt."
    },
    "pievagrybiai": {
-    "price": 1.59,
+    "price": 1.99,
     "size": 400,
     "title": "Pievagrybiai, 400 g",
-    "was": 1.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pievagrybiai%2C%20400%20g"
    },
    "obuoliai": {
-    "price": 1.39,
+    "price": 1.49,
     "size": 1000,
-    "title": "Sveriami obuoliai RAUDONIEJI",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sveriami%20obuoliai%20RAUDONIEJI"
+    "title": "Obuoliai JONAGOLD",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Obuoliai%20JONAGOLD"
    },
    "kiaulienos_farsas": {
     "price": 2.49,
@@ -633,8 +639,8 @@
    "mal_mesa": {
     "price": 7.99,
     "size": 1000,
-    "title": "Jautienos ir kiaulienos faršas, atšaldytas, riebumas ne didenis kaip 30% PAGAMINTA IKI",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Jautienos%20ir%20kiaulienos%20far%C5%A1as%2C%20at%C5%A1aldytas%2C%20riebumas%20ne%20didenis%20kaip%2030%25%20PAGAMINTA%20IKI"
+    "title": "Jautienos ir kiaulienos faršas, atšaldytas, riebumas ne didesnis kaip 30% PAGAMINTA IKI",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Jautienos%20ir%20kiaulienos%20far%C5%A1as%2C%20at%C5%A1aldytas%2C%20riebumas%20ne%20didesnis%20kaip%2030%25%20PAGAMINTA%20IKI"
    },
    "jautienos_farsas": {
     "price": 9.99,
@@ -673,11 +679,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Silpnai%20s%C5%ABdyta%20silki%C5%B3%20fil%C4%97%20su%20aliejumi%20CLEVER%2C%20220%20g"
    },
    "grietine": {
-    "price": 1.19,
+    "price": 1.51,
     "size": 400,
-    "title": "Grietinė ŽEMAITIJOS, 30% rieb., 400 g",
-    "was": 2.99,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Grietin%C4%97%20%C5%BDEMAITIJOS%2C%2030%25%20rieb.%2C%20400%20g"
+    "title": "Grietinė CLEVER, 30% rieb., 400 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Grietin%C4%97%20CLEVER%2C%2030%25%20rieb.%2C%20400%20g"
    },
    "kefyras": {
     "price": 1.89,
@@ -692,25 +697,23 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pienas%20%202%2C5%25rieb.%2C%201%20l"
    },
    "varske": {
-    "price": 0.35,
+    "price": 0.65,
     "size": 180,
-    "title": "Varškė  VILKYŠKIŲ, 9% rieb., 180 g ",
-    "was": 1.19,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Var%C5%A1k%C4%97%20%20VILKY%C5%A0KI%C5%B2%2C%209%25%20rieb.%2C%20180%20g%20"
+    "title": "Varškė ROKIŠKIO VISIEMS, 9 % rieb., 180 g",
+    "was": 0.75,
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Var%C5%A1k%C4%97%20ROKI%C5%A0KIO%20VISIEMS%2C%209%20%25%20rieb.%2C%20180%20g"
    },
    "kiausiniai": {
-    "price": 1.55,
+    "price": 2.19,
     "size": 10,
-    "title": "Ant kraiko laikomų vištų rudi kiaušiniai IKI, M dydžio, 10 vnt.",
-    "was": 2.59,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ant%20kraiko%20laikom%C5%B3%20vi%C5%A1t%C5%B3%20rudi%20kiau%C5%A1iniai%20IKI%2C%20M%20dyd%C5%BEio%2C%2010%20vnt."
+    "title": "Ant kraiko laikomi kiaušiniai OLUKSNE, M dydžio, 10 vnt.",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ant%20kraiko%20laikomi%20kiau%C5%A1iniai%20OLUKSNE%2C%20M%20dyd%C5%BEio%2C%2010%20vnt."
    },
    "sviestas": {
-    "price": 0.8,
-    "size": 180,
-    "title": "Sviestas ROKIŠKIO NAMINIS, 82% rieb., 180 g",
-    "was": 2.69,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sviestas%20ROKI%C5%A0KIO%20NAMINIS%2C%2082%25%20rieb.%2C%20180%20g"
+    "price": 0.89,
+    "size": 170,
+    "title": "Sviestas CLEVER 82%, 170 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sviestas%20CLEVER%2082%25%2C%20170%20g"
    },
    "suris": {
     "price": 2.69,
@@ -761,7 +764,7 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Avi%C5%BEiniai%20dribsniai%20CLEVER%2C%20400%20g"
    },
    "zirniai": {
-    "price": 0.55,
+    "price": 0.56,
     "size": 800,
     "title": "Žirniai skaldyti CLEVER, 800 g",
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C5%BDirniai%20skaldyti%20CLEVER%2C%20800%20g"
@@ -920,8 +923,8 @@
    "kuskusas": {
     "price": 1.99,
     "size": 500,
-    "title": "Vidutinio didžio kuskusas BILLA 500 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Vidutinio%20did%C5%BEio%20kuskusas%20BILLA%20500%20g"
+    "title": "Vidutinio dydžio kuskusas BILLA 500 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Vidutinio%20dyd%C5%BEio%20kuskusas%20BILLA%20500%20g"
    },
    "pom_pasta": {
     "price": 2.29,

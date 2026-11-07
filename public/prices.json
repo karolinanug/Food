@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-06T11:08:39.208Z",
+ "generated": "2026-11-07T10:26:16.419Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-06T11:08:39.208Z",
+   "updated": "2026-11-07T10:26:16.419Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-06T11:08:39.208Z",
+   "updated": "2026-11-07T10:26:16.419Z",
    "found": 14,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-06T11:08:39.208Z",
-   "found": 6,
+   "updated": "2026-11-07T10:26:16.419Z",
+   "found": 9,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-06T11:08:39.208Z",
+   "updated": "2026-11-07T10:26:16.419Z",
    "found": 67,
    "total": 79
   }
@@ -420,10 +420,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/alyvuogiu-aliejus/alyvuogiu-isspaudu-aliejus-rimi-smart-1-l/p/804085"
    },
    "kario": {
-    "price": 0.59,
+    "price": 0.79,
     "size": 25,
-    "title": "Kario prieskoniai RIMI, 25g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniai-ir-zoleles/kario-prieskoniai-rimi-25g/p/814493"
+    "title": "Prieskonių mišinys karis SALDVA, 25g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniu-misiniai/prieskoniu-misinys-karis-saldva-25g/p/154759"
    },
    "paprika_malta": {
     "price": 1.35,
@@ -532,6 +532,27 @@
    }
   },
   "lidl": {
+   "svogunai": {
+    "price": 0.28,
+    "size": 1000,
+    "title": "Lietuviški geltonieji svogūnai, 1 kg",
+    "was": 0.59,
+    "url": "https://www.lidl.lt/p/lietuviski-geltonieji-svogunai/p11029564"
+   },
+   "morkos": {
+    "price": 0.33,
+    "size": 1000,
+    "title": "Morkos, 1 kg",
+    "was": 0.69,
+    "url": "https://www.lidl.lt/p/morkos/p11151140"
+   },
+   "lasisa": {
+    "price": 13.49,
+    "size": 1000,
+    "title": "ŠVIEŽIA ŽUVIS Atlantinės lašišos filė, 1 kg",
+    "was": 16.99,
+    "url": "https://www.lidl.lt/p/sviezia-zuvis-atlantines-lasisos-file/p11461522"
+   },
    "grietine": {
     "price": 1.99,
     "size": 500,
@@ -563,11 +584,12 @@
     "title": "Deluxe Akacijų medus su koriu, 500 g",
     "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
    },
-   "kumpis": {
-    "price": 3.99,
-    "size": 150,
-    "title": "Deluxe Serrano kumpis „Gran Reserva“, 150 g",
-    "url": "https://www.lidl.lt/p/deluxe-serrano-kumpis-gran-reserva/p11274013"
+   "cukinijos": {
+    "price": 1.49,
+    "size": 1000,
+    "title": "Žaliosios cukinijos, 1 kg",
+    "was": 1.89,
+    "url": "https://www.lidl.lt/p/zaliosios-cukinijos/p11151073"
    }
   },
   "iki": {
@@ -614,7 +636,7 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Lietuvi%C5%A1ki%20trumpavaisiai%20agurkai"
    },
    "pomidorai": {
-    "price": 2.79,
+    "price": 2.99,
     "size": 1000,
     "title": "Kekiniai pomidorai ",
     "was": 3.49,
@@ -857,10 +879,9 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Bananai%20BON%20VIA"
    },
    "imbieras": {
-    "price": 2.79,
+    "price": 3.99,
     "size": 1000,
     "title": "Imbieras",
-    "was": 3.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Imbieras"
    },
    "kalakutienos_farsas": {

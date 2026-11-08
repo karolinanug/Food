@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-07T10:26:16.419Z",
+ "generated": "2026-11-08T10:34:20.691Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-07T10:26:16.419Z",
+   "updated": "2026-11-08T10:34:20.691Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-07T10:26:16.419Z",
+   "updated": "2026-11-08T10:34:20.691Z",
    "found": 14,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-07T10:26:16.419Z",
-   "found": 9,
+   "updated": "2026-11-08T10:34:20.691Z",
+   "found": 6,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-07T10:26:16.419Z",
+   "updated": "2026-11-08T10:34:20.691Z",
    "found": 67,
    "total": 79
   }
@@ -72,11 +72,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/lietuviski-sviezi-baltaguziai-kopustai-1-kg/p/244676"
    },
    "agurkai": {
-    "price": 3.49,
-    "size": 1000,
-    "title": "Lietuviški trumpavaisiai agurkai, kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/lietuviski-trumpavaisiai-agurkai-kg/p/245039",
-    "loose": true
+    "price": 1.19,
+    "size": 250,
+    "title": "Lietuviškas ilgavaisis agurkas RIMI, 1 vnt",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/lietuviskas-ilgavaisis-agurkas-rimi-1-vnt/p/975432"
    },
    "pomidorai": {
     "price": 2.28,
@@ -273,11 +272,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 0.4,
+    "price": 1.46,
     "size": 1000,
-    "title": "Raudonos aitriosios paprikos, 1kl.,1kg",
-    "was": 9.99,
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/raudonos-aitriosios-paprikos-1kl-1kg/p/210112"
+    "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
    },
    "cukinijos": {
     "price": 1.99,
@@ -532,20 +530,6 @@
    }
   },
   "lidl": {
-   "svogunai": {
-    "price": 0.28,
-    "size": 1000,
-    "title": "Lietuviški geltonieji svogūnai, 1 kg",
-    "was": 0.59,
-    "url": "https://www.lidl.lt/p/lietuviski-geltonieji-svogunai/p11029564"
-   },
-   "morkos": {
-    "price": 0.33,
-    "size": 1000,
-    "title": "Morkos, 1 kg",
-    "was": 0.69,
-    "url": "https://www.lidl.lt/p/morkos/p11151140"
-   },
    "lasisa": {
     "price": 13.49,
     "size": 1000,
@@ -571,12 +555,6 @@
     "size": 10,
     "title": "Kiaušiniai, 10 vnt.",
     "url": "https://www.lidl.lt/p/kiausiniai/p11474570"
-   },
-   "sviestas": {
-    "price": 2.49,
-    "size": 500,
-    "title": "Pilos Sviestas XXL, 500 g",
-    "url": "https://www.lidl.lt/p/pilos-sviestas-xxl/p11426644"
    },
    "medus": {
     "price": 9.99,
@@ -636,11 +614,11 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Lietuvi%C5%A1ki%20trumpavaisiai%20agurkai"
    },
    "pomidorai": {
-    "price": 2.99,
+    "price": 2.49,
     "size": 1000,
-    "title": "Kekiniai pomidorai ",
-    "was": 3.49,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Kekiniai%20pomidorai%20"
+    "title": "Slyviniai pomidorai ",
+    "was": 2.99,
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Slyviniai%20pomidorai%20"
    },
    "petrazoles": {
     "price": 2.29,

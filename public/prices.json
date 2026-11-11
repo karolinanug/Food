@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-10T11:24:58.022Z",
+ "generated": "2026-11-11T11:11:58.040Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-10T11:24:58.022Z",
-   "found": 66,
+   "updated": "2026-11-11T11:11:58.040Z",
+   "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-10T11:24:58.022Z",
+   "updated": "2026-11-11T11:11:58.040Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-10T11:24:58.022Z",
+   "updated": "2026-11-11T11:11:58.040Z",
    "found": 7,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-10T11:24:58.022Z",
+   "updated": "2026-11-11T11:11:58.040Z",
    "found": 66,
    "total": 79
   }
@@ -79,11 +79,10 @@
     "loose": true
    },
    "pomidorai": {
-    "price": 2.59,
+    "price": 2.28,
     "size": 1000,
-    "title": "Lietuviški pomidorai, 2 kl., kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/lietuviski-pomidorai-2-kl-kg/p/244594",
-    "loose": true
+    "title": "Juodieji pomidorai KUMATO (57-67 mm),1kl.,1kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/juodieji-pomidorai-kumato-57-67-mm-1kl-1kg/p/295995"
    },
    "pievagrybiai": {
     "price": 2.69,
@@ -96,6 +95,12 @@
     "size": 1000,
     "title": "Obuoliai Champion, 1 kl., 1 kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/vaisiai-ir-uogos/obuoliai-/obuoliai-champion-1-kl-1-kg/p/269163"
+   },
+   "kiaulienos_farsas": {
+    "price": 1.29,
+    "size": 350,
+    "title": "Kiaulienos faršas, atšaldyt. RIMI SMART, 350G",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/malta-mesa/kiaulienos-farsas-atsaldyt-rimi-smart-350g/p/815631"
    },
    "mal_mesa": {
     "price": 1.85,
@@ -114,12 +119,6 @@
     "size": 200,
     "title": "Š. rūk. kiaul. šoninės kubeliai MORLINY, 200g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/saltai-rukyti-mesos-gaminiai/s-ruk-kiaul-sonines-kubeliai-morliny-200g/p/999202"
-   },
-   "vist_blauzdeles": {
-    "price": 3.33,
-    "size": 1000,
-    "title": "K.r. vištų blauzdelės MORLINY vak., I r., 1kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/karstai-rukyti-mesos-gaminiai/k-r-vistu-blauzdeles-morliny-vak-i-r-1kg/p/287065"
    },
    "lasisa": {
     "price": 13.99,
@@ -227,10 +226,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/ankstiniai/skaldyti-zirniai-rimi-smart-800-g/p/808414"
    },
    "pom_konservai": {
-    "price": 1.99,
+    "price": 2.39,
     "size": 400,
-    "title": "Ekol. smulkinti pomidorai SALLING EKO, 400 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/konservuotas-maistas/konservuoti-pomidorai/ekol-smulkinti-pomidorai-salling-eko-400-g/p/818500"
+    "title": "Konservuoti pjaustyti pomidorai MUTTI, 400 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/konservuotas-maistas/konservuoti-pomidorai/konservuoti-pjaustyti-pomidorai-mutti-400-g/p/964982"
    },
    "krakmolas": {
     "price": 0.71,
@@ -280,12 +279,6 @@
     "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
    },
-   "cukinijos": {
-    "price": 1.99,
-    "size": 200,
-    "title": "Ekol. žalios cukinijos RIMI ECO, 1 vnt.",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/moliugai-ir-cukinijos/ekol-zalios-cukinijos-rimi-eco-1-vnt-/p/916576"
-   },
    "brokoliai": {
     "price": 1.65,
     "size": 350,
@@ -299,7 +292,7 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/salotos-ir-ju-misiniai/spinatai-200-g/p/909368"
    },
    "bananai": {
-    "price": 1.25,
+    "price": 1.29,
     "size": 1000,
     "title": "Bananai Cavendish, 20+cm , 1kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/vaisiai-ir-uogos/bananai/bananai-cavendish-20-cm-1kg/p/270939"
@@ -585,9 +578,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Plautos%20morkos%20CLEVER"
    },
    "cesnakai": {
-    "price": 1.99,
+    "price": 1.59,
     "size": 150,
     "title": "Ekologiški česnakai BON VIA BIO, 150 g",
+    "was": 1.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ekologi%C5%A1ki%20%C4%8Desnakai%20BON%20VIA%20BIO%2C%20150%20g"
    },
    "burokeliai": {
@@ -597,10 +591,9 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Burok%C4%97liai%20CLEVER%20"
    },
    "marinuoti_burokeliai": {
-    "price": 1.49,
+    "price": 2.79,
     "size": 570,
     "title": "Marinuoti burokėliai SPILVA KLASIKA, 570 g",
-    "was": 2.79,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Marinuoti%20burok%C4%97liai%20SPILVA%20KLASIKA%2C%20570%20g"
    },
    "agurkai": {
@@ -612,8 +605,8 @@
    "pomidorai": {
     "price": 2.99,
     "size": 1000,
-    "title": "Slyviniai pomidorai ",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Slyviniai%20pomidorai%20"
+    "title": "Pomidorai ",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pomidorai%20"
    },
    "pievagrybiai": {
     "price": 1.99,
@@ -769,10 +762,9 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C5%BDirniai%20skaldyti%20CLEVER%2C%20800%20g"
    },
    "pom_konservai": {
-    "price": 0.35,
+    "price": 1.19,
     "size": 400,
     "title": "Smulkinti pomidorai BILLA, 400 g",
-    "was": 1.19,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Smulkinti%20pomidorai%20BILLA%2C%20400%20g"
    },
    "krakmolas": {
@@ -908,17 +900,15 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Raudonieji%20l%C4%99%C5%A1iai%20SKAN%C4%96JA%2C%20500%20g"
    },
    "avinzirniai": {
-    "price": 0.79,
+    "price": 1.99,
     "size": 310,
     "title": "Garuose ruošti avinžirniai BONDUELLE VAPEUR, 310 g",
-    "was": 1.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Garuose%20ruo%C5%A1ti%20avin%C5%BEirniai%20BONDUELLE%20VAPEUR%2C%20310%20g"
    },
    "pupeles": {
-    "price": 0.79,
+    "price": 1.99,
     "size": 400,
     "title": "Konservuotos raudonosios pupelės HEINZ RED KIDNEY BEANS, 400 g",
-    "was": 1.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Konservuotos%20raudonosios%20pupel%C4%97s%20HEINZ%20RED%20KIDNEY%20BEANS%2C%20400%20g"
    },
    "tofu": {
@@ -934,11 +924,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Vidutinio%20dyd%C5%BEio%20kuskusas%20BILLA%20500%20g"
    },
    "pom_pasta": {
-    "price": 0.44,
-    "size": 70,
-    "title": "Pomidorų pasta ČUMAK, 70 g",
-    "was": 1.49,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pomidor%C5%B3%20pasta%20%C4%8CUMAK%2C%2070%20g"
+    "price": 2.29,
+    "size": 200,
+    "title": "Ekologiška pomidorų pasta BILLA BIO, 200 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ekologi%C5%A1ka%20pomidor%C5%B3%20pasta%20BILLA%20BIO%2C%20200%20g"
    },
    "makaronai_bg": {
     "price": 1.79,

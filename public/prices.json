@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-11T11:11:58.040Z",
+ "generated": "2026-11-12T11:29:15.679Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-11T11:11:58.040Z",
+   "updated": "2026-11-12T11:29:15.679Z",
    "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-11T11:11:58.040Z",
+   "updated": "2026-11-12T11:29:15.679Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-11T11:11:58.040Z",
+   "updated": "2026-11-12T11:29:15.679Z",
    "found": 7,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-11T11:11:58.040Z",
+   "updated": "2026-11-12T11:29:15.679Z",
    "found": 66,
    "total": 79
   }
@@ -128,10 +128,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/sviezios-zuvys-ir-juru-gerybes/zuvu-file/atsaldyta-atlantiniu-lasisu-file-1-kg/p/807538"
    },
    "silke": {
-    "price": 1.29,
-    "size": 1000,
-    "title": "Atlant. silkių filė su priesk. aliejuje, 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/atlant-silkiu-file-su-priesk-aliejuje-1-kg/p/900856"
+    "price": 1.05,
+    "size": 240,
+    "title": "Sūd. atl. silkių filė aliej. RIMI SMART, 240g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/sud-atl-silkiu-file-aliej-rimi-smart-240g/p/811810"
    },
    "grietine": {
     "price": 1.5,
@@ -190,10 +190,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/duoniukai-riestainiai-dziuvesiai/pieniniai-dziuvesiai-vilniaus-duona-250g/p/146474"
    },
    "grikiai": {
-    "price": 1.79,
+    "price": 1.69,
     "size": 800,
-    "title": "Grikių kruopos RIMI SMART, 800 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/grikiu-kruopos-rimi-smart-800-g/p/804281"
+    "title": "Grikių kruopos EKOFRISA, 800 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/grikiu-kruopos-ekofrisa-800-g/p/129516"
    },
    "ryziai": {
     "price": 0.58,
@@ -202,7 +202,7 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/ryziai/ilgagrudziai-ryziai-rimi-smart-4-x-100-g/p/805069"
    },
    "makaronai": {
-    "price": 0.65,
+    "price": 0.79,
     "size": 400,
     "title": "Spagečiai PASAKA, 400 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/makaronai/ilgieji-ir-plokstieji-makaronai/spageciai-pasaka-400-g/p/148637"
@@ -226,10 +226,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/ankstiniai/skaldyti-zirniai-rimi-smart-800-g/p/808414"
    },
    "pom_konservai": {
-    "price": 2.39,
+    "price": 1.99,
     "size": 400,
-    "title": "Konservuoti pjaustyti pomidorai MUTTI, 400 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/konservuotas-maistas/konservuoti-pomidorai/konservuoti-pjaustyti-pomidorai-mutti-400-g/p/964982"
+    "title": "Ekol. smulkinti pomidorai SALLING EKO, 400 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/konservuotas-maistas/konservuoti-pomidorai/ekol-smulkinti-pomidorai-salling-eko-400-g/p/818500"
    },
    "krakmolas": {
     "price": 0.71,
@@ -274,10 +274,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 1.46,
-    "size": 1000,
-    "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
+    "price": 1.89,
+    "size": 200,
+    "title": "Mažosios paprikos RIMI, 1 kl., 200 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/mazosios-paprikos-rimi-1-kl-200-g/p/296792"
    },
    "brokoliai": {
     "price": 1.65,
@@ -415,10 +415,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/alyvuogiu-aliejus/alyvuogiu-isspaudu-aliejus-rimi-smart-1-l/p/804085"
    },
    "kario": {
-    "price": 0.79,
+    "price": 0.59,
     "size": 25,
-    "title": "Prieskonių mišinys karis SALDVA, 25g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniu-misiniai/prieskoniu-misinys-karis-saldva-25g/p/154759"
+    "title": "Kario prieskoniai RIMI, 25g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniai-ir-zoleles/kario-prieskoniai-rimi-25g/p/814493"
    },
    "paprika_malta": {
     "price": 1.35,
@@ -605,8 +605,9 @@
    "pomidorai": {
     "price": 2.99,
     "size": 1000,
-    "title": "Pomidorai ",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pomidorai%20"
+    "title": "Kekiniai pomidorai ",
+    "was": 3.49,
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Kekiniai%20pomidorai%20"
    },
    "pievagrybiai": {
     "price": 1.99,
@@ -688,11 +689,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pienas%20%202%2C5%25rieb.%2C%201%20l"
    },
    "varske": {
-    "price": 0.65,
+    "price": 0.69,
     "size": 180,
-    "title": "Varškė ROKIŠKIO VISIEMS, 9 % rieb., 180 g",
-    "was": 0.75,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Var%C5%A1k%C4%97%20ROKI%C5%A0KIO%20VISIEMS%2C%209%20%25%20rieb.%2C%20180%20g"
+    "title": "Varškė liesa 0,5% rieb. CLEVER, 180 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Var%C5%A1k%C4%97%20liesa%200%2C5%25%20rieb.%20CLEVER%2C%20180%20g"
    },
    "kiausiniai": {
     "price": 1.99,

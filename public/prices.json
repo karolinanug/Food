@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-14T10:39:48.221Z",
+ "generated": "2026-11-15T11:13:13.191Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-14T10:39:48.221Z",
-   "found": 65,
+   "updated": "2026-11-15T11:13:13.191Z",
+   "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-14T10:39:48.221Z",
+   "updated": "2026-11-15T11:13:13.191Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-14T10:39:48.221Z",
+   "updated": "2026-11-15T11:13:13.191Z",
    "found": 10,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-14T10:39:48.221Z",
+   "updated": "2026-11-15T11:13:13.191Z",
    "found": 66,
    "total": 79
   }
@@ -118,6 +118,12 @@
     "size": 200,
     "title": "Š. rūk. kiaul. šoninės kubeliai MORLINY, 200g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/saltai-rukyti-mesos-gaminiai/s-ruk-kiaul-sonines-kubeliai-morliny-200g/p/999202"
+   },
+   "vist_blauzdeles": {
+    "price": 3.33,
+    "size": 1000,
+    "title": "K.r. vištų blauzdelės MORLINY vak., I r., 1kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/karstai-rukyti-mesos-gaminiai/k-r-vistu-blauzdeles-morliny-vak-i-r-1kg/p/287065"
    },
    "lasisa": {
     "price": 13.99,
@@ -513,9 +519,9 @@
    "svogunai": {
     "price": 0.28,
     "size": 1000,
-    "title": "Lietuviški geltonieji svogūnai, 1 kg",
+    "title": "MATRIKET Lietuviški geltonieji svogūnai, 1 kg",
     "was": 0.59,
-    "url": "https://www.lidl.lt/p/lietuviski-geltonieji-svogunai/p11029564"
+    "url": "https://www.lidl.lt/p/matriket-lietuviski-geltonieji-svogunai/p11029564"
    },
    "morkos": {
     "price": 0.33,
@@ -832,11 +838,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Saul%C4%97gr%C4%85%C5%BE%C5%B3%20aliejus%20CLEVER%2C%201%20l"
    },
    "paprikos": {
-    "price": 0.99,
-    "size": 200,
-    "title": "Mažosios paprikos SNACK, 200 g",
-    "was": 2.29,
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ma%C5%BEosios%20paprikos%20SNACK%2C%20200%20g"
+    "price": 2.99,
+    "size": 500,
+    "title": "Įvairiaspalvės paprikos BON VIA, 500 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=%C4%AEvairiaspalv%C4%97s%20paprikos%20BON%20VIA%2C%20500%20g"
    },
    "brokoliai": {
     "price": 2.79,

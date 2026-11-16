@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-15T11:13:13.191Z",
+ "generated": "2026-11-16T11:43:07.828Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-15T11:13:13.191Z",
+   "updated": "2026-11-16T11:43:07.828Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-15T11:13:13.191Z",
+   "updated": "2026-11-16T11:43:07.828Z",
    "found": 12,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-15T11:13:13.191Z",
-   "found": 10,
+   "updated": "2026-11-16T11:43:07.828Z",
+   "found": 6,
    "total": 79,
    "partial": true
   },
   "iki": {
-   "updated": "2026-11-15T11:13:13.191Z",
+   "updated": "2026-11-16T11:43:07.828Z",
    "found": 66,
    "total": 79
   }
@@ -119,12 +119,6 @@
     "title": "Š. rūk. kiaul. šoninės kubeliai MORLINY, 200g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/saltai-rukyti-mesos-gaminiai/s-ruk-kiaul-sonines-kubeliai-morliny-200g/p/999202"
    },
-   "vist_blauzdeles": {
-    "price": 3.33,
-    "size": 1000,
-    "title": "K.r. vištų blauzdelės MORLINY vak., I r., 1kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/karstai-rukyti-mesos-gaminiai/k-r-vistu-blauzdeles-morliny-vak-i-r-1kg/p/287065"
-   },
    "lasisa": {
     "price": 13.99,
     "size": 1000,
@@ -133,10 +127,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/sviezios-zuvys-ir-juru-gerybes/zuvu-file/atsaldyta-atlantiniu-lasisu-file-1-kg/p/807538"
    },
    "silke": {
-    "price": 1.29,
-    "size": 1000,
-    "title": "Atlant. silkių filė su priesk. aliejuje, 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/atlant-silkiu-file-su-priesk-aliejuje-1-kg/p/900856"
+    "price": 1.05,
+    "size": 240,
+    "title": "Dūmo sk. silkių filė aliejuje RIMI SMART,240g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/dumo-sk-silkiu-file-aliejuje-rimi-smart-240g/p/811811"
    },
    "grietine": {
     "price": 1.5,
@@ -283,6 +277,12 @@
     "size": 1000,
     "title": "Raudonos aitriosios paprikos, 1kl.,1kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/raudonos-aitriosios-paprikos-1kl-1kg/p/210112"
+   },
+   "cukinijos": {
+    "price": 1.99,
+    "size": 200,
+    "title": "Ekol. žalios cukinijos RIMI ECO, 1 vnt.",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/moliugai-ir-cukinijos/ekol-zalios-cukinijos-rimi-eco-1-vnt-/p/916576"
    },
    "brokoliai": {
     "price": 1.65,
@@ -516,38 +516,11 @@
    }
   },
   "lidl": {
-   "svogunai": {
-    "price": 0.28,
-    "size": 1000,
-    "title": "MATRIKET Lietuviški geltonieji svogūnai, 1 kg",
-    "was": 0.59,
-    "url": "https://www.lidl.lt/p/matriket-lietuviski-geltonieji-svogunai/p11029564"
-   },
-   "morkos": {
-    "price": 0.33,
-    "size": 1000,
-    "title": "Morkos, 1 kg",
-    "was": 0.69,
-    "url": "https://www.lidl.lt/p/morkos/p11151140"
-   },
    "pievagrybiai": {
     "price": 1.49,
     "size": 400,
     "title": "Baltieji pievagrybiai, 400 g",
     "url": "https://www.lidl.lt/p/baltieji-pievagrybiai/p11029536"
-   },
-   "lasisa": {
-    "price": 13.49,
-    "size": 1000,
-    "title": "ŠVIEŽIA ŽUVIS Atlantinės lašišos filė, 1 kg",
-    "was": 16.99,
-    "url": "https://www.lidl.lt/p/sviezia-zuvis-atlantines-lasisos-file/p11461522"
-   },
-   "grietine": {
-    "price": 1.79,
-    "size": 360,
-    "title": "Grietinė, 360 g",
-    "url": "https://www.lidl.lt/p/grietine/p11451500"
    },
    "varske": {
     "price": 4.29,
@@ -573,19 +546,19 @@
     "title": "Deluxe Akacijų medus su koriu, 500 g",
     "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
    },
-   "cukinijos": {
-    "price": 1.49,
-    "size": 1000,
-    "title": "Žaliosios cukinijos, 1 kg",
-    "was": 1.89,
-    "url": "https://www.lidl.lt/p/zaliosios-cukinijos/p11151073"
+   "kumpis": {
+    "price": 3.99,
+    "size": 150,
+    "title": "Deluxe Serrano kumpis „Gran Reserva“, 150 g",
+    "url": "https://www.lidl.lt/p/deluxe-serrano-kumpis-gran-reserva/p11274013"
    }
   },
   "iki": {
    "bulves": {
-    "price": 0.39,
+    "price": 0.14,
     "size": 1000,
     "title": "Sveriamos bulvės CLEVER ",
+    "was": 0.39,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Sveriamos%20bulv%C4%97s%20CLEVER%20"
    },
    "svogunai": {
@@ -595,10 +568,11 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Svog%C5%ABnai%20CLEVER%20"
    },
    "morkos": {
-    "price": 0.69,
+    "price": 0.39,
     "size": 1000,
-    "title": "Plautos morkos CLEVER",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Plautos%20morkos%20CLEVER"
+    "title": "Fasuotos morkos, 1 kg",
+    "was": 0.99,
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Fasuotos%20morkos%2C%201%20kg"
    },
    "cesnakai": {
     "price": 1.59,
@@ -608,10 +582,9 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ekologi%C5%A1ki%20%C4%8Desnakai%20BON%20VIA%20BIO%2C%20150%20g"
    },
    "burokeliai": {
-    "price": 0.39,
+    "price": 0.49,
     "size": 1000,
     "title": "Burokėliai CLEVER ",
-    "was": 0.49,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Burok%C4%97liai%20CLEVER%20"
    },
    "marinuoti_burokeliai": {
@@ -640,9 +613,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pievagrybiai%2C%20400%20g"
    },
    "obuoliai": {
-    "price": 1.49,
+    "price": 0.59,
     "size": 1000,
     "title": "Obuoliai JONAGOLD",
+    "was": 1.49,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Obuoliai%20JONAGOLD"
    },
    "kiaulienos_farsas": {
@@ -851,9 +825,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Brokoliai%20BIMI%2C%20200%20g"
    },
    "spinatai": {
-    "price": 1.19,
+    "price": 0.47,
     "size": 100,
     "title": "Mažieji špinatai IKI, 100 g",
+    "was": 1.19,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ma%C5%BEieji%20%C5%A1pinatai%20IKI%2C%20100%20g"
    },
    "bananai": {
@@ -863,9 +838,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Bananai%20BON%20VIA"
    },
    "imbieras": {
-    "price": 3.99,
+    "price": 2.99,
     "size": 1000,
     "title": "Imbieras",
+    "was": 3.99,
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Imbieras"
    },
    "kalakutienos_farsas": {
@@ -947,10 +923,10 @@
     "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Vidutinio%20dyd%C5%BEio%20kuskusas%20BILLA%20500%20g"
    },
    "pom_pasta": {
-    "price": 2.29,
-    "size": 200,
-    "title": "Ekologiška pomidorų pasta BILLA BIO, 200 g",
-    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Ekologi%C5%A1ka%20pomidor%C5%B3%20pasta%20BILLA%20BIO%2C%20200%20g"
+    "price": 0.99,
+    "size": 140,
+    "title": "Pomidorų pasta BILLA, 140 g",
+    "url": "https://www.lastmile.lt/lt/chain/IKI/search?q=Pomidor%C5%B3%20pasta%20BILLA%2C%20140%20g"
    },
    "makaronai_bg": {
     "price": 1.79,

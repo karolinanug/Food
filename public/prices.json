@@ -1,27 +1,28 @@
 {
- "generated": "2026-11-17T12:04:24.823Z",
+ "generated": "2026-11-18T11:55:31.792Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-17T12:04:24.823Z",
-   "found": 67,
+   "updated": "2026-11-18T11:55:31.792Z",
+   "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-17T12:04:24.823Z",
+   "updated": "2026-11-18T11:55:31.792Z",
    "found": 9,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-17T12:04:24.823Z",
-   "found": 6,
+   "updated": "2026-11-18T11:55:31.792Z",
+   "found": 5,
    "total": 79,
    "partial": true
   },
   "iki": {
    "updated": "2026-11-17T12:04:24.823Z",
    "found": 66,
-   "total": 79
+   "total": 79,
+   "error": "Error: 404 LastMile"
   }
  },
  "offers": {
@@ -54,7 +55,7 @@
     "loose": true
    },
    "burokeliai": {
-    "price": 0.26,
+    "price": 0.24,
     "size": 1000,
     "title": "Lietuviški burokėliai, 1 kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/burokeliai-ir-kiti-sakniavaisiai/lietuviski-burokeliai-1-kg/p/920730"
@@ -118,12 +119,6 @@
     "size": 200,
     "title": "Š. rūk. kiaul. šoninės kubeliai MORLINY, 200g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/saltai-rukyti-mesos-gaminiai/s-ruk-kiaul-sonines-kubeliai-morliny-200g/p/999202"
-   },
-   "vist_blauzdeles": {
-    "price": 3.33,
-    "size": 1000,
-    "title": "K.r. vištų blauzdelės MORLINY vak., I r., 1kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-mesos-ir-paukstienos-gaminiai-/karstai-rukyti-mesos-gaminiai/k-r-vistu-blauzdeles-morliny-vak-i-r-1kg/p/287065"
    },
    "lasisa": {
     "price": 2.99,
@@ -424,10 +419,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/alyvuogiu-aliejus/alyvuogiu-isspaudu-aliejus-rimi-smart-1-l/p/804085"
    },
    "kario": {
-    "price": 0.59,
+    "price": 0.79,
     "size": 25,
-    "title": "Kario prieskoniai RIMI, 25g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniai-ir-zoleles/kario-prieskoniai-rimi-25g/p/814493"
+    "title": "Prieskonių mišinys karis SALDVA, 25g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniu-misiniai/prieskoniu-misinys-karis-saldva-25g/p/154759"
    },
    "paprika_malta": {
     "price": 1.35,
@@ -513,12 +508,6 @@
     "size": 1200,
     "title": "Pilos Pusriebė varškė XXL 9 %, 1200 g",
     "url": "https://www.lidl.lt/p/pilos-pusriebe-varske-xxl-9/p11308442"
-   },
-   "kiausiniai": {
-    "price": 1.69,
-    "size": 10,
-    "title": "Kiaušiniai, 10 vnt.",
-    "url": "https://www.lidl.lt/p/kiausiniai/p11474570"
    },
    "cukrus": {
     "price": 0.55,

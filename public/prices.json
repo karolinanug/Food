@@ -1,20 +1,20 @@
 {
- "generated": "2026-11-18T11:55:31.792Z",
+ "generated": "2026-11-19T11:52:59.533Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-18T11:55:31.792Z",
+   "updated": "2026-11-19T11:52:59.533Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-18T11:55:31.792Z",
-   "found": 9,
+   "updated": "2026-11-19T11:52:59.533Z",
+   "found": 11,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-18T11:55:31.792Z",
-   "found": 5,
+   "updated": "2026-11-19T11:52:59.533Z",
+   "found": 4,
    "total": 79,
    "partial": true
   },
@@ -190,10 +190,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/auksaspalviai-dziuveseliai-city-taste-350-g/p/1014224"
    },
    "grikiai": {
-    "price": 1.69,
+    "price": 1.79,
     "size": 800,
-    "title": "Grikių kruopos EKOFRISA, 800 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/grikiu-kruopos-ekofrisa-800-g/p/129516"
+    "title": "Garinti grikiai RIMI, 800 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/garinti-grikiai-rimi-800-g/p/816373"
    },
    "ryziai": {
     "price": 0.58,
@@ -419,16 +419,16 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/alyvuogiu-aliejus/alyvuogiu-isspaudu-aliejus-rimi-smart-1-l/p/804085"
    },
    "kario": {
-    "price": 0.79,
+    "price": 0.59,
     "size": 25,
-    "title": "Prieskonių mišinys karis SALDVA, 25g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniu-misiniai/prieskoniu-misinys-karis-saldva-25g/p/154759"
+    "title": "Kario prieskoniai RIMI, 25g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniai-ir-zoleles/kario-prieskoniai-rimi-25g/p/814493"
    },
    "paprika_malta": {
-    "price": 1.35,
-    "size": 60,
-    "title": "Malta saldžioji paprika TASTE FROM GARDEN,60g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniai-ir-zoleles/malta-saldzioji-paprika-taste-from-garden-60g/p/1005587"
+    "price": 0.8,
+    "size": 25,
+    "title": "Malta raudonoji saldžioji paprika SALDVA, 25g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/pipirai/malta-raudonoji-saldzioji-paprika-saldva-25g/p/154786"
    }
   },
   "barbora": {
@@ -437,6 +437,13 @@
     "size": 1000,
     "title": "Bulvės LINKĖJIMAI IŠ KAIMO, fasuotos, 1 kg",
     "was": 0.89,
+    "url": "https://www.maxima.lt/pasiulymai"
+   },
+   "kopustas": {
+    "price": 1.49,
+    "size": 1000,
+    "title": "Švieži baltagūžiai kopūstai, 1 kg",
+    "was": 1.89,
     "url": "https://www.maxima.lt/pasiulymai"
    },
    "pomidorai": {
@@ -488,6 +495,13 @@
     "was": 1.59,
     "url": "https://www.maxima.lt/pasiulymai"
    },
+   "aliejus": {
+    "price": 3.39,
+    "size": 1500,
+    "title": "Saulėgrąžų aliejus NATURA, 1,5 l",
+    "was": 4.39,
+    "url": "https://www.maxima.lt/pasiulymai"
+   },
    "alyvuogiu_aliejus": {
     "price": 7.99,
     "size": 750,
@@ -520,12 +534,6 @@
     "size": 500,
     "title": "Deluxe Akacijų medus su koriu, 500 g",
     "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
-   },
-   "kumpis": {
-    "price": 3.99,
-    "size": 150,
-    "title": "Deluxe Serrano kumpis „Gran Reserva“, 150 g",
-    "url": "https://www.lidl.lt/p/deluxe-serrano-kumpis-gran-reserva/p11274013"
    }
   },
   "iki": {

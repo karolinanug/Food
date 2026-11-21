@@ -1,20 +1,20 @@
 {
- "generated": "2026-11-20T11:54:07.741Z",
+ "generated": "2026-11-21T11:24:20.759Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-20T11:54:07.741Z",
-   "found": 65,
+   "updated": "2026-11-21T11:24:20.759Z",
+   "found": 63,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-20T11:54:07.741Z",
+   "updated": "2026-11-21T11:24:20.759Z",
    "found": 11,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-20T11:54:07.741Z",
-   "found": 5,
+   "updated": "2026-11-21T11:24:20.759Z",
+   "found": 7,
    "total": 79,
    "partial": true
   },
@@ -268,10 +268,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 1.89,
-    "size": 200,
-    "title": "Mažosios paprikos RIMI, 1 kl., 200 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/mazosios-paprikos-rimi-1-kl-200-g/p/296792"
+    "price": 0.5,
+    "size": 1000,
+    "title": "Raudonos aitriosios paprikos, 1kl.,1kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/raudonos-aitriosios-paprikos-1kl-1kg/p/210112"
    },
    "cukinijos": {
     "price": 1.99,
@@ -310,12 +310,6 @@
     "title": "Ekolog. vištienos krūtinėlės filė RIMI, 260 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/sviezia-paukstiena/vistiena/ekolog-vistienos-krutineles-file-rimi-260-g/p/815168"
    },
-   "kalakutienos_farsas": {
-    "price": 3.79,
-    "size": 500,
-    "title": "Kalakutienos faršas RIMI, 500 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/malta-mesa/kalakutienos-farsas-rimi-500-g/p/809287"
-   },
    "menke": {
     "price": 5.99,
     "size": 800,
@@ -353,10 +347,11 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/augaliniai-produktai/augaliniai-gerimai/augaliniai-gerimai/ekol-avizu-gerimas-salling-veggie-1-l/p/816757"
    },
    "batonas": {
-    "price": 0.32,
-    "size": 300,
-    "title": "Raikytas batonas RIMI SMART, 300 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-batonas-rimi-smart-300-g/p/814929"
+    "price": 0.79,
+    "size": 500,
+    "title": "Raikytas pieniškas XXL batonas, 500 g",
+    "was": 0.99,
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-pieniskas-xxl-batonas-500-g/p/998793"
    },
    "lesiai": {
     "price": 1.79,
@@ -375,12 +370,6 @@
     "size": 400,
     "title": "Kons. raudonosios pupelės HEINZ KIDNEY, 400 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/konservuotas-maistas/konservuoti-avinzirniai-pupeles-ir-lesiai/kons-raudonosios-pupeles-heinz-kidney-400-g/p/161073"
-   },
-   "tofu": {
-    "price": 0.89,
-    "size": 180,
-    "title": "Natūralus tofu LUNTER, 180 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/augaliniai-produktai/augalines-surio-ir-tofu-alternatyvos/tofu/naturalus-tofu-lunter-180-g/p/4000769"
    },
    "kuskusas": {
     "price": 2.09,
@@ -505,17 +494,37 @@
    }
   },
   "lidl": {
+   "morkos": {
+    "price": 0.29,
+    "size": 1000,
+    "title": "Morkos, 1 kg",
+    "was": 0.59,
+    "url": "https://www.lidl.lt/p/morkos/p11151140"
+   },
+   "burokeliai": {
+    "price": 0.35,
+    "size": 1000,
+    "title": "RYNECZEK LIDLA Raudonieji burokėliai, 1 kg",
+    "was": 0.45,
+    "url": "https://www.lidl.lt/p/ryneczek-lidla-raudonieji-burokeliai/p11029663"
+   },
    "pievagrybiai": {
     "price": 1.49,
     "size": 400,
     "title": "Baltieji pievagrybiai, 400 g",
     "url": "https://www.lidl.lt/p/baltieji-pievagrybiai/p11029536"
    },
+   "pienas": {
+    "price": 0.69,
+    "size": 1000,
+    "title": "Pilos Pienas, 1 l",
+    "url": "https://www.lidl.lt/p/pilos-pienas/p11432516"
+   },
    "varske": {
-    "price": 4.29,
-    "size": 1200,
-    "title": "Pilos Pusriebė varškė XXL 9 %, 1200 g",
-    "url": "https://www.lidl.lt/p/pilos-pusriebe-varske-xxl-9/p11308442"
+    "price": 2.59,
+    "size": 500,
+    "title": "Varškė, 500 g",
+    "url": "https://www.lidl.lt/p/varske/p11594329"
    },
    "cukrus": {
     "price": 0.55,
@@ -528,12 +537,6 @@
     "size": 500,
     "title": "Deluxe Akacijų medus su koriu, 500 g",
     "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
-   },
-   "kumpis": {
-    "price": 3.99,
-    "size": 150,
-    "title": "Deluxe Serrano kumpis „Gran Reserva“, 150 g",
-    "url": "https://www.lidl.lt/p/deluxe-serrano-kumpis-gran-reserva/p11274013"
    }
   },
   "iki": {

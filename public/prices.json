@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-21T11:24:20.759Z",
+ "generated": "2026-11-22T11:39:43.049Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-21T11:24:20.759Z",
-   "found": 63,
+   "updated": "2026-11-22T11:39:43.049Z",
+   "found": 65,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-21T11:24:20.759Z",
+   "updated": "2026-11-22T11:39:43.049Z",
    "found": 11,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-21T11:24:20.759Z",
+   "updated": "2026-11-22T11:39:43.049Z",
    "found": 7,
    "total": 79,
    "partial": true
@@ -190,10 +190,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/auksaspalviai-dziuveseliai-city-taste-350-g/p/1014224"
    },
    "grikiai": {
-    "price": 1.79,
+    "price": 1.69,
     "size": 800,
-    "title": "Garinti grikiai RIMI, 800 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/garinti-grikiai-rimi-800-g/p/816373"
+    "title": "Grikių kruopos EKOFRISA, 800 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/kruopos/grikiai/grikiu-kruopos-ekofrisa-800-g/p/129516"
    },
    "ryziai": {
     "price": 0.58,
@@ -268,10 +268,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 0.5,
+    "price": 1.46,
     "size": 1000,
-    "title": "Raudonos aitriosios paprikos, 1kl.,1kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/raudonos-aitriosios-paprikos-1kl-1kg/p/210112"
+    "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
    },
    "cukinijos": {
     "price": 1.99,
@@ -310,6 +310,12 @@
     "title": "Ekolog. vištienos krūtinėlės filė RIMI, 260 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/sviezia-paukstiena/vistiena/ekolog-vistienos-krutineles-file-rimi-260-g/p/815168"
    },
+   "kalakutienos_farsas": {
+    "price": 3.79,
+    "size": 500,
+    "title": "Kalakutienos faršas RIMI, 500 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/malta-mesa/kalakutienos-farsas-rimi-500-g/p/809287"
+   },
    "menke": {
     "price": 5.99,
     "size": 800,
@@ -347,11 +353,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/augaliniai-produktai/augaliniai-gerimai/augaliniai-gerimai/ekol-avizu-gerimas-salling-veggie-1-l/p/816757"
    },
    "batonas": {
-    "price": 0.79,
-    "size": 500,
-    "title": "Raikytas pieniškas XXL batonas, 500 g",
-    "was": 0.99,
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-pieniskas-xxl-batonas-500-g/p/998793"
+    "price": 0.32,
+    "size": 300,
+    "title": "Raikytas batonas RIMI SMART, 300 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-batonas-rimi-smart-300-g/p/814929"
    },
    "lesiai": {
     "price": 1.79,
@@ -370,6 +375,12 @@
     "size": 400,
     "title": "Kons. raudonosios pupelės HEINZ KIDNEY, 400 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/konservuotas-maistas/konservuoti-avinzirniai-pupeles-ir-lesiai/kons-raudonosios-pupeles-heinz-kidney-400-g/p/161073"
+   },
+   "tofu": {
+    "price": 0.89,
+    "size": 180,
+    "title": "Natūralus tofu LUNTER, 180 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/augaliniai-produktai/augalines-surio-ir-tofu-alternatyvos/tofu/naturalus-tofu-lunter-180-g/p/4000769"
    },
    "kuskusas": {
     "price": 2.09,
@@ -504,9 +515,9 @@
    "burokeliai": {
     "price": 0.35,
     "size": 1000,
-    "title": "RYNECZEK LIDLA Raudonieji burokėliai, 1 kg",
+    "title": "Raudonieji burokėliai, 1 kg",
     "was": 0.45,
-    "url": "https://www.lidl.lt/p/ryneczek-lidla-raudonieji-burokeliai/p11029663"
+    "url": "https://www.lidl.lt/p/raudonieji-burokeliai/p11029663"
    },
    "pievagrybiai": {
     "price": 1.49,

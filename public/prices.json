@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-22T11:39:43.049Z",
+ "generated": "2026-11-23T13:12:18.983Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-22T11:39:43.049Z",
-   "found": 65,
+   "updated": "2026-11-23T13:12:18.983Z",
+   "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-22T11:39:43.049Z",
-   "found": 11,
+   "updated": "2026-11-23T13:12:18.983Z",
+   "found": 9,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-22T11:39:43.049Z",
+   "updated": "2026-11-23T13:12:18.983Z",
    "found": 7,
    "total": 79,
    "partial": true
@@ -55,7 +55,7 @@
     "loose": true
    },
    "burokeliai": {
-    "price": 0.24,
+    "price": 0.25,
     "size": 1000,
     "title": "Lietuviški burokėliai, 1 kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/burokeliai-ir-kiti-sakniavaisiai/lietuviski-burokeliai-1-kg/p/920730"
@@ -231,6 +231,12 @@
     "title": "Ekol. smulkinti pomidorai SALLING EKO, 400 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/konservuotas-maistas/konservuoti-pomidorai/ekol-smulkinti-pomidorai-salling-eko-400-g/p/818500"
    },
+   "krakmolas": {
+    "price": 0.71,
+    "size": 400,
+    "title": "Bulvių krakmolas RIMI SMART, 400 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/miltai-ir-miltu-misiniai/kiti-miltai-ir-krakmolas/bulviu-krakmolas-rimi-smart-400-g/p/817151"
+   },
    "cukrus": {
     "price": 0.64,
     "size": 1000,
@@ -268,10 +274,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 1.46,
+    "price": 0.5,
     "size": 1000,
-    "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
+    "title": "Raudonos aitriosios paprikos, 1kl.,1kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/raudonos-aitriosios-paprikos-1kl-1kg/p/210112"
    },
    "cukinijos": {
     "price": 1.99,
@@ -293,13 +299,13 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/salotos-ir-ju-misiniai/spinatai-200-g/p/909368"
    },
    "bananai": {
-    "price": 1.29,
+    "price": 1.41,
     "size": 1000,
     "title": "Bananai Cavendish, 20+cm , 1kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/vaisiai-ir-uogos/bananai/bananai-cavendish-20-cm-1kg/p/270939"
    },
    "imbieras": {
-    "price": 0.88,
+    "price": 0.89,
     "size": 1000,
     "title": "Imbierų šaknys, 1kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/burokeliai-ir-kiti-sakniavaisiai/imbieru-saknys-1kg/p/276593"
@@ -419,10 +425,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniai-ir-zoleles/kario-prieskoniai-rimi-25g/p/814493"
    },
    "paprika_malta": {
-    "price": 0.8,
-    "size": 25,
-    "title": "Malta raudonoji saldžioji paprika SALDVA, 25g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/pipirai/malta-raudonoji-saldzioji-paprika-saldva-25g/p/154786"
+    "price": 1.35,
+    "size": 60,
+    "title": "Malta saldžioji paprika TASTE FROM GARDEN,60g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/prieskoniai/prieskoniai-ir-zoleles/malta-saldzioji-paprika-taste-from-garden-60g/p/1005587"
    }
   },
   "barbora": {
@@ -431,13 +437,6 @@
     "size": 1000,
     "title": "Bulvės LINKĖJIMAI IŠ KAIMO, fasuotos, 1 kg",
     "was": 0.89,
-    "url": "https://www.maxima.lt/pasiulymai"
-   },
-   "kopustas": {
-    "price": 1.49,
-    "size": 1000,
-    "title": "Švieži baltagūžiai kopūstai, 1 kg",
-    "was": 1.89,
     "url": "https://www.maxima.lt/pasiulymai"
    },
    "pomidorai": {
@@ -489,13 +488,6 @@
     "was": 1.59,
     "url": "https://www.maxima.lt/pasiulymai"
    },
-   "aliejus": {
-    "price": 3.39,
-    "size": 1500,
-    "title": "Saulėgrąžų aliejus NATURA, 1,5 l",
-    "was": 4.39,
-    "url": "https://www.maxima.lt/pasiulymai"
-   },
    "alyvuogiu_aliejus": {
     "price": 7.99,
     "size": 750,
@@ -519,12 +511,6 @@
     "was": 0.45,
     "url": "https://www.lidl.lt/p/raudonieji-burokeliai/p11029663"
    },
-   "pievagrybiai": {
-    "price": 1.49,
-    "size": 400,
-    "title": "Baltieji pievagrybiai, 400 g",
-    "url": "https://www.lidl.lt/p/baltieji-pievagrybiai/p11029536"
-   },
    "pienas": {
     "price": 0.69,
     "size": 1000,
@@ -537,17 +523,23 @@
     "title": "Varškė, 500 g",
     "url": "https://www.lidl.lt/p/varske/p11594329"
    },
-   "cukrus": {
-    "price": 0.55,
+   "suris": {
+    "price": 7.99,
     "size": 1000,
-    "title": "Cukrus, 1 kg",
-    "url": "https://www.lidl.lt/p/cukrus/p11461764"
+    "title": "Milbona Edamo sūris riekelėmis, 1000 g",
+    "url": "https://www.lidl.lt/p/milbona-edamo-suris-riekelemis/p11000491"
    },
    "medus": {
     "price": 9.99,
     "size": 500,
     "title": "Deluxe Akacijų medus su koriu, 500 g",
     "url": "https://www.lidl.lt/p/deluxe-akaciju-medus-su-koriu/p11030805"
+   },
+   "kumpis": {
+    "price": 3.99,
+    "size": 150,
+    "title": "Deluxe Serrano kumpis „Gran Reserva“, 150 g",
+    "url": "https://www.lidl.lt/p/deluxe-serrano-kumpis-gran-reserva/p11274013"
    }
   },
   "iki": {

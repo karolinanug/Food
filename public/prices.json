@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-23T13:12:18.983Z",
+ "generated": "2026-11-24T13:56:40.329Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-23T13:12:18.983Z",
+   "updated": "2026-11-24T13:56:40.329Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-23T13:12:18.983Z",
-   "found": 9,
+   "updated": "2026-11-24T13:56:40.329Z",
+   "found": 8,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-23T13:12:18.983Z",
+   "updated": "2026-11-24T13:56:40.329Z",
    "found": 7,
    "total": 79,
    "partial": true
@@ -29,9 +29,9 @@
   "rimi": {
    "bulves": {
     "price": 0.72,
-    "size": 1600,
-    "title": "Šviež. liet. Bulvės GALA/ PAROL,kl.2,d.45+,1k",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/bulves/sviez-liet-bulves-gala-parol-kl-2-d-45-1k/p/244679"
+    "size": 1000,
+    "title": "Liet. bulvės GALA/PAROL, kl. 2, d. 45+, 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/bulves/liet-bulves-gala-parol-kl-2-d-45-1-kg/p/244679"
    },
    "svogunai": {
     "price": 0.45,
@@ -41,11 +41,10 @@
     "loose": true
    },
    "morkos": {
-    "price": 0.69,
+    "price": 0.38,
     "size": 1000,
-    "title": "Plautos morkos, kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/morkos/plautos-morkos-kg/p/272768",
-    "loose": true
+    "title": "Lietuviškos plautos morkos, 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/morkos/plautos-morkos-kg/p/272768"
    },
    "cesnakai": {
     "price": 3.49,
@@ -69,20 +68,20 @@
    "kopustas": {
     "price": 0.97,
     "size": 1000,
-    "title": "Lietuviški švieži baltagūžiai kopūstai, 1 kg",
+    "title": "Lietuviški baltagūžiai kopūstai, 1 kg",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/lietuviski-sviezi-baltaguziai-kopustai-1-kg/p/244676"
    },
    "agurkai": {
-    "price": 1.19,
+    "price": 0.95,
     "size": 300,
     "title": "Ilgavaisis agurkas RIMI, 300g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/ilgavaisis-agurkas-rimi-300g/p/815307"
    },
    "pomidorai": {
-    "price": 2.3,
+    "price": 2.74,
     "size": 1000,
-    "title": "Juodieji pomidorai KUMATO (57-67 mm),1kl.,1kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/juodieji-pomidorai-kumato-57-67-mm-1kl-1kg/p/295995"
+    "title": "Raudonieji pomidorai su šakele, 1 kl., 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/raudonieji-pomidorai-su-sakele-1-kl-1-kg/p/268771"
    },
    "pievagrybiai": {
     "price": 2.69,
@@ -134,17 +133,15 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/apdorotos-zuvies-gaminiai/silkes-ir-ju-gaminiai-/atlant-silkiu-file-su-priesk-aliejuje-1-kg/p/900856"
    },
    "grietine": {
-    "price": 1.39,
+    "price": 1.5,
     "size": 400,
-    "title": "ŽEMAITIJOS jogurtinė grietinė, 10 %, 400 g",
-    "was": 1.79,
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/grietine-ir-grietinele/grietine-/zemaitijos-jogurtine-grietine-10-400-g/p/272612"
+    "title": "Grietinė RIMI SMART, 30 % rieb., 400 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/grietine-ir-grietinele/grietine-/grietine-rimi-smart-30-rieb-400-g/p/814672"
    },
    "kefyras": {
-    "price": 1.49,
+    "price": 1.89,
     "size": 1000,
     "title": "Ekologiškas kefyras AUGA, 2,5 % rieb. 1 l",
-    "was": 1.89,
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/kefyras-rugpienis-ir-pasukos/kefyras/ekologiskas-kefyras-auga-2-5-rieb-1-l/p/998154"
    },
    "pienas": {
@@ -160,9 +157,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/varskes-produktai/varske/liesa-varske-rimi-smart-0-5-rieb-180-g/p/813690"
    },
    "kiausiniai": {
-    "price": 2.39,
+    "price": 1.89,
     "size": 10,
     "title": "Kaimiški kiaušiniai RIMI (M dydis), 10 vnt.",
+    "was": 2.39,
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/kiausiniai/2---ant-kraiko-laikomu-vistu-kiausiniai-/kaimiski-kiausiniai-rimi-m-dydis-10-vnt-/p/803267"
    },
    "sviestas": {
@@ -172,10 +170,11 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/sviestas/sviestas/sviestas-rimi-82-riebumo-200-g/p/817284"
    },
    "suris": {
-    "price": 2.69,
-    "size": 240,
-    "title": "Ferment. Rokiškio NAMINIS sūris, 45 %, 240 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/suris/fermentiniai-suriai/ferment-rokiskio-naminis-suris-45-240-g/p/281140"
+    "price": 1.95,
+    "size": 200,
+    "title": "Sūris ROKIŠKIO GOUDA, 48 %, 200 g",
+    "was": 2.79,
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/pieno-produktai-ir-kiausiniai/suris/fermentiniai-suriai/suris-rokiskio-gouda-48-200-g/p/995615"
    },
    "juoda_duona": {
     "price": 1.45,
@@ -274,10 +273,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 0.5,
-    "size": 1000,
-    "title": "Raudonos aitriosios paprikos, 1kl.,1kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/raudonos-aitriosios-paprikos-1kl-1kg/p/210112"
+    "price": 1.89,
+    "size": 200,
+    "title": "Mažosios paprikos RIMI, 1 kl., 200 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/mazosios-paprikos-rimi-1-kl-200-g/p/296792"
    },
    "cukinijos": {
     "price": 1.99,
@@ -292,10 +291,9 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/brokolis-rimi-350-g/p/978280"
    },
    "spinatai": {
-    "price": 1.35,
+    "price": 1.69,
     "size": 200,
     "title": "Špinatai, 200 g",
-    "was": 1.69,
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/salotos-ir-ju-misiniai/spinatai-200-g/p/909368"
    },
    "bananai": {
@@ -317,9 +315,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/sviezia-paukstiena/vistiena/ekolog-vistienos-krutineles-file-rimi-260-g/p/815168"
    },
    "kalakutienos_farsas": {
-    "price": 3.79,
+    "price": 2.59,
     "size": 500,
     "title": "Kalakutienos faršas RIMI, 500 g",
+    "was": 3.79,
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/malta-mesa/kalakutienos-farsas-rimi-500-g/p/809287"
    },
    "menke": {
@@ -432,67 +431,59 @@
    }
   },
   "barbora": {
-   "bulves": {
-    "price": 0.69,
+   "svogunai": {
+    "price": 0.33,
     "size": 1000,
-    "title": "Bulvės LINKĖJIMAI IŠ KAIMO, fasuotos, 1 kg",
-    "was": 0.89,
+    "title": "Svogūnai, 1 kg",
+    "was": 0.45,
     "url": "https://www.maxima.lt/pasiulymai"
    },
    "pomidorai": {
-    "price": 1.69,
-    "size": 250,
-    "title": "Smulkiavaisiai slyviniai pomidorai WELL DONE, fasuoti, 250 g",
-    "was": 2.15,
+    "price": 2.19,
+    "size": 1000,
+    "title": "Pomidorai, 1 kg",
+    "was": 2.95,
     "url": "https://www.maxima.lt/pasiulymai"
    },
    "sonine": {
-    "price": 2.49,
-    "size": 400,
-    "title": "Marinuoti kiaulienos šoninės kepsneliai WELL DONE su česnakais, 400 g",
-    "was": 2.99,
+    "price": 1.99,
+    "size": 200,
+    "title": "Šaltai rūkyti kiaulienos šoninės kubeliai MORLINY, a. r., 200 g",
+    "was": 2.29,
     "url": "https://www.maxima.lt/pasiulymai"
    },
-   "silke": {
-    "price": 1.99,
-    "size": 300,
-    "title": "SKANDINAVIŠKA; GURMANIŠKA silkių filė EDEGA be aliejaus, 2 rūšių, 300 g",
-    "was": 2.39,
+   "lasisa": {
+    "price": 12.99,
+    "size": 1000,
+    "title": "Šviežia atlantinių lašišų filė su oda, 1 kg",
+    "was": 16.99,
+    "url": "https://www.maxima.lt/pasiulymai"
+   },
+   "pienas": {
+    "price": 0.69,
+    "size": 1000,
+    "title": "UAT pienas FARM MILK, 3,2 % rieb., 1 l",
+    "was": 0.89,
     "url": "https://www.maxima.lt/pasiulymai"
    },
    "varske": {
-    "price": 3.65,
-    "size": 1000,
-    "title": "Pusriebė varškė WELL DONE, 9 % rieb., vakuumuota, 1 kg",
-    "was": 4.99,
-    "url": "https://www.maxima.lt/pasiulymai"
-   },
-   "kiausiniai": {
-    "price": 1.69,
-    "size": 10,
-    "title": "Ant kraiko laikomų vištų kiaušiniai, A klasė, 1 dėž. (10 vnt.)",
-    "was": 2.49,
-    "url": "https://www.maxima.lt/pasiulymai"
-   },
-   "sviestas": {
-    "price": 0.99,
-    "size": 170,
-    "title": "Sviestas WELL DONE, 82 % rieb., 170 g",
-    "was": 1.29,
+    "price": 2.69,
+    "size": 200,
+    "title": "Varškė GRAIKIŠKA AMFORA, 7 rūšių, 0,8 % rieb., 2 ind. × 200 g",
     "url": "https://www.maxima.lt/pasiulymai"
    },
    "ryziai": {
-    "price": 1.39,
+    "price": 1.99,
     "size": 800,
-    "title": "Plikytit; ilgagrūdžiai ryžiai WELL DONE, 2 rūšių, 800 g",
-    "was": 1.59,
+    "title": "Ryžiai GRALLA PREMIUM, 3 rūšių, 800 g",
+    "was": 2.29,
     "url": "https://www.maxima.lt/pasiulymai"
    },
-   "alyvuogiu_aliejus": {
-    "price": 7.99,
-    "size": 750,
-    "title": "Ypač grynas alyvuogių aliejus FILIPPO BERIO, 750 ml",
-    "was": 9.69,
+   "kumpis": {
+    "price": 1.79,
+    "size": 100,
+    "title": "Pjaustytas MILANO saliamis; kiaulienos kumpis PROSCIUTTO WELL DONE, 2 rūšių, a. r., 80–100 g",
+    "was": 1.99,
     "url": "https://www.maxima.lt/pasiulymai"
    }
   },

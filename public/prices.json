@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-24T13:56:40.329Z",
+ "generated": "2026-11-25T13:11:06.674Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-24T13:56:40.329Z",
+   "updated": "2026-11-25T13:11:06.674Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-24T13:56:40.329Z",
+   "updated": "2026-11-25T13:11:06.674Z",
    "found": 8,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-24T13:56:40.329Z",
+   "updated": "2026-11-25T13:11:06.674Z",
    "found": 7,
    "total": 79,
    "partial": true
@@ -44,7 +44,7 @@
     "price": 0.38,
     "size": 1000,
     "title": "Lietuviškos plautos morkos, 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/morkos/plautos-morkos-kg/p/272768"
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/morkos/lietuviskos-plautos-morkos-1-kg/p/272768"
    },
    "cesnakai": {
     "price": 3.49,
@@ -69,7 +69,7 @@
     "price": 0.97,
     "size": 1000,
     "title": "Lietuviški baltagūžiai kopūstai, 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/lietuviski-sviezi-baltaguziai-kopustai-1-kg/p/244676"
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/lietuviski-baltaguziai-kopustai-1-kg/p/244676"
    },
    "agurkai": {
     "price": 0.95,
@@ -285,13 +285,13 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/moliugai-ir-cukinijos/ekol-zalios-cukinijos-rimi-eco-1-vnt-/p/916576"
    },
    "brokoliai": {
-    "price": 1.79,
+    "price": 1.65,
     "size": 350,
     "title": "Brokolis RIMI, 350 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/kopustai/brokolis-rimi-350-g/p/978280"
    },
    "spinatai": {
-    "price": 1.69,
+    "price": 1.89,
     "size": 200,
     "title": "Špinatai, 200 g",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/salotos-ir-ju-misiniai/spinatai-200-g/p/909368"

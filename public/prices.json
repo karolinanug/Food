@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-25T13:11:06.674Z",
+ "generated": "2026-11-26T12:51:57.254Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-25T13:11:06.674Z",
+   "updated": "2026-11-26T12:51:57.254Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-25T13:11:06.674Z",
+   "updated": "2026-11-26T12:51:57.254Z",
    "found": 8,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-25T13:11:06.674Z",
+   "updated": "2026-11-26T12:51:57.254Z",
    "found": 7,
    "total": 79,
    "partial": true
@@ -96,7 +96,7 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/vaisiai-ir-uogos/obuoliai-/obuoliai-champion-1-kl-1-kg/p/269163"
    },
    "kiaulienos_farsas": {
-    "price": 1.29,
+    "price": 0.85,
     "size": 350,
     "title": "Kiaulienos faršas, atšaldyt. RIMI SMART, 350G",
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/mesa-ir-zuvis-/malta-mesa/kiaulienos-farsas-atsaldyt-rimi-smart-350g/p/815631"
@@ -185,8 +185,8 @@
    "dziuvesiai": {
     "price": 1.99,
     "size": 350,
-    "title": "Auksaspalviai džiūvėsėliai CITY TASTE, 350 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/auksaspalviai-dziuveseliai-city-taste-350-g/p/1014224"
+    "title": "Džiūvėsėliai su paprika CITY TASTE, 350g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/dziuveseliai-su-paprika-city-taste-350g/p/1013005"
    },
    "grikiai": {
     "price": 1.69,
@@ -358,10 +358,11 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/augaliniai-produktai/augaliniai-gerimai/augaliniai-gerimai/ekol-avizu-gerimas-salling-veggie-1-l/p/816757"
    },
    "batonas": {
-    "price": 0.32,
-    "size": 300,
-    "title": "Raikytas batonas RIMI SMART, 300 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-batonas-rimi-smart-300-g/p/814929"
+    "price": 0.79,
+    "size": 500,
+    "title": "Raikytas pieniškas XXL batonas, 500 g",
+    "was": 0.99,
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-pieniskas-xxl-batonas-500-g/p/998793"
    },
    "lesiai": {
     "price": 1.79,

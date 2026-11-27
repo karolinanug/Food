@@ -1,20 +1,20 @@
 {
- "generated": "2026-11-26T12:51:57.254Z",
+ "generated": "2026-11-27T12:44:48.936Z",
  "stores": {
   "rimi": {
-   "updated": "2026-11-26T12:51:57.254Z",
+   "updated": "2026-11-27T12:44:48.936Z",
    "found": 66,
    "total": 79
   },
   "barbora": {
-   "updated": "2026-11-26T12:51:57.254Z",
+   "updated": "2026-11-27T12:44:48.936Z",
    "found": 8,
    "total": 79,
    "partial": true
   },
   "lidl": {
-   "updated": "2026-11-26T12:51:57.254Z",
-   "found": 7,
+   "updated": "2026-11-27T12:44:48.936Z",
+   "found": 6,
    "total": 79,
    "partial": true
   },
@@ -78,10 +78,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/agurkai/ilgavaisis-agurkas-rimi-300g/p/815307"
    },
    "pomidorai": {
-    "price": 2.74,
+    "price": 2.3,
     "size": 1000,
-    "title": "Raudonieji pomidorai su šakele, 1 kl., 1 kg",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/raudonieji-pomidorai-su-sakele-1-kl-1-kg/p/268771"
+    "title": "Juodieji pomidorai KUMATO (57-67 mm),1kl.,1kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/pomidorai/juodieji-pomidorai-kumato-57-67-mm-1kl-1kg/p/295995"
    },
    "pievagrybiai": {
     "price": 2.69,
@@ -185,8 +185,8 @@
    "dziuvesiai": {
     "price": 1.99,
     "size": 350,
-    "title": "Džiūvėsėliai su paprika CITY TASTE, 350g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/dziuveseliai-su-paprika-city-taste-350g/p/1013005"
+    "title": "Auksaspalviai džiūvėsėliai CITY TASTE, 350 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duonos-pakaitalai/malti-dziuveseliai/auksaspalviai-dziuveseliai-city-taste-350-g/p/1014224"
    },
    "grikiai": {
     "price": 1.69,
@@ -273,10 +273,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/bakaleja/aliejus-ir-actas/saulegrazu-aliejus/saulegrazu-aliejus-rimi-smart-1-l/p/804284"
    },
    "paprikos": {
-    "price": 1.89,
-    "size": 200,
-    "title": "Mažosios paprikos RIMI, 1 kl., 200 g",
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/mazosios-paprikos-rimi-1-kl-200-g/p/296792"
+    "price": 1.53,
+    "size": 1000,
+    "title": "Žaliosios paprikos (80+ mm), 1 kl., 1 kg",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/vaisiai-darzoves-ir-geles/darzoves-ir-grybai/paprikos/zaliosios-paprikos-80-mm-1-kl-1-kg/p/269169"
    },
    "cukinijos": {
     "price": 1.99,
@@ -358,11 +358,10 @@
     "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/augaliniai-produktai/augaliniai-gerimai/augaliniai-gerimai/ekol-avizu-gerimas-salling-veggie-1-l/p/816757"
    },
    "batonas": {
-    "price": 0.79,
-    "size": 500,
-    "title": "Raikytas pieniškas XXL batonas, 500 g",
-    "was": 0.99,
-    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-pieniskas-xxl-batonas-500-g/p/998793"
+    "price": 0.32,
+    "size": 300,
+    "title": "Raikytas batonas RIMI SMART, 300 g",
+    "url": "https://www.rimi.lt/e-parduotuve/lt/produktai/duonos-gaminiai-/duona/batonas/raikytas-batonas-rimi-smart-300-g/p/814929"
    },
    "lesiai": {
     "price": 1.79,
@@ -508,12 +507,6 @@
     "size": 1000,
     "title": "Pilos Pienas, 1 l",
     "url": "https://www.lidl.lt/p/pilos-pienas/p11432516"
-   },
-   "varske": {
-    "price": 2.59,
-    "size": 500,
-    "title": "Varškė, 500 g",
-    "url": "https://www.lidl.lt/p/varske/p11594329"
    },
    "suris": {
     "price": 7.99,
